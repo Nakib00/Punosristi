@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Impact - Punosristi Eco-Tech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="assets/js/tailwind-config.js"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-white/20 shadow-sm">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto w-full">
+<a href="index.html" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary">Punosristi</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="how-it-works.html">How It Works</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="impact.html">Impact</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:opacity-90 transition-all duration-300 hover:shadow-lg active:scale-95">Get Started</button>
+<button id="mobile-menu-btn" class="md:hidden text-primary p-2 flex items-center justify-center rounded-full hover:bg-primary/10 transition-all duration-300 hover:shadow-lg active:scale-95">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu Dropdown -->
+<div id="mobile-menu" class="hidden md:hidden bg-surface/95 backdrop-blur-md border-t border-white/20 px-margin-mobile py-4 shadow-lg flex flex-col gap-2 max-h-[80vh] overflow-y-auto">
+<a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="how-it-works.html">How It Works</a>
+<a class="text-primary font-bold block border-l-4 border-primary pl-3 py-2 bg-primary/5 font-body-md text-body-md rounded-r-lg" href="impact.html">Impact</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="contact.html">Contact</a>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-bold hover:opacity-90 w-full mt-4 shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-lg active:scale-95">Get Started</button>
+</div>
+</nav>
+<main>
+<!-- 1. HERO SECTION -->
+<section class="relative w-full min-h-[819px] flex items-center pt-20 pb-32 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Vast aerial shot of clean Bangladesh river." class="w-full h-full object-cover" data-alt="A breathtaking, vast aerial drone shot of a pristine, wide river winding through lush green landscapes in rural Bangladesh during early morning golden hour. The water reflects the soft, bright light, contrasting beautifully with the deep emerald greens of the surrounding foliage. The image has a clean, premium, high-resolution aesthetic, evoking a profound sense of natural purity and environmental preservation." src="assets/images/image_20.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="max-w-2xl glass-panel p-8 md:p-12 rounded-xl shadow-lg border border-white/40">
+<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary mb-6">
+                        One Machine.<br/>One Bottle.<br/>One Nation.
+                    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Tracking our real-time environmental and social impact across Bangladesh. Every bottle recycled is a step towards a cleaner future.
+                    </p>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-caps text-label-caps hover:bg-primary-container transition-colors shadow-[0_4px_14px_rgba(76,175,80,0.3)]">
+                        VIEW LIVE DASHBOARD
+                    </button>
+</div>
+</div>
+</section>
+<!-- 2. STATS SECTION -->
+<section class="py-16 md:py-24 bg-surface px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Projected Year 1 Impact</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Metrics driven by transparent data collection from our nationwide RVM network.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Stat Card 1 -->
+<div class="glass-panel p-8 rounded-xl flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" data-icon="recycling" data-weight="fill">recycling</span>
+</div>
+<div class="font-stat-display text-stat-display text-primary mb-2">150K</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Kg Plastic Recycled</div>
+</div>
+<!-- Stat Card 2 -->
+<div class="glass-panel p-8 rounded-xl flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" data-icon="memory" data-weight="fill">memory</span>
+</div>
+<div class="font-stat-display text-stat-display text-primary mb-2">100+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Active RVMs</div>
+</div>
+<!-- Stat Card 3 -->
+<div class="glass-panel p-8 rounded-xl flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" data-icon="group" data-weight="fill">group</span>
+</div>
+<div class="font-stat-display text-stat-display text-primary mb-2">5,000</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Active Users</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. ENVIRONMENTAL SECTION -->
+<section class="py-16 md:py-24 bg-surface-container-lowest px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="relative h-[500px] rounded-xl overflow-hidden shadow-lg group">
+<!-- Polluted Image -->
+<div class="absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out group-hover:opacity-0">
+<img loading="lazy" alt="Polluted street in Bangladesh" class="w-full h-full object-cover" data-alt="A gritty, hyper-realistic, high-contrast photograph showing a severely polluted canal in a dense urban setting in Bangladesh. The water is choked with thousands of discarded plastic bottles and debris. The atmosphere is heavy, smoggy, and dramatic, utilizing a muted color palette to emphasize the severe environmental crisis. The image serves as a stark 'before' state." src="assets/images/image_21.jpg"/>
+</div>
+<!-- Clean Image -->
+<div class="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-700 ease-in-out group-hover:opacity-100">
+<img loading="lazy" alt="Clean river in Bangladesh" class="w-full h-full object-cover" data-alt="A vibrant, uplifting photograph of a crystal-clear river winding through a thriving, bright green agricultural landscape in Bangladesh. The sun is shining brightly, casting a warm, hopeful light over the pristine water. The composition is balanced and serene, representing the clean, 'after' state achieved through successful environmental intervention and recycling efforts." src="assets/images/image_22.jpg"/>
+</div>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="glass-panel px-6 py-2 rounded-full font-label-caps text-label-caps text-primary uppercase shadow-md">Hover to restore</div>
+</div>
+</div>
+<div class="space-y-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Reversing the Tide</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">By intercepting plastic waste before it reaches our waterways, we are preserving the natural beauty of Bangladesh.</p>
+</div>
+<div class="glass-panel p-6 rounded-xl border border-outline-variant/30 flex items-start gap-4">
+<div class="bg-secondary/10 p-3 rounded-full shrink-0">
+<span class="material-symbols-outlined text-secondary" data-icon="bolt">bolt</span>
+</div>
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2" style="font-size: 1.25rem;">Energy Conserved</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Recycling plastic saves 80% of the energy required to produce new plastic from raw materials.</p>
+</div>
+</div>
+<div class="glass-panel p-6 rounded-xl border border-outline-variant/30 flex items-start gap-4">
+<div class="bg-secondary/10 p-3 rounded-full shrink-0">
+<span class="material-symbols-outlined text-secondary" data-icon="co2">co2</span>
+</div>
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2" style="font-size: 1.25rem;">CO2 Prevented</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Our Year 1 projections aim to prevent over 250 metric tons of CO2 emissions associated with virgin plastic production.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. CLOSING SECTION -->
+<section class="py-20 md:py-32 relative bg-primary overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+<img loading="lazy" alt="Child recycling" class="w-full h-full object-cover" data-alt="A touching, close-up photograph of a young child's hand carefully placing a clear plastic bottle into the glowing, high-tech slot of a modern Reverse Vending Machine. The lighting is focused and warm, highlighting the small hand against the sleek, green-tinted metal of the machine. The background is softly blurred. The mood is optimistic, focusing on the next generation taking environmental responsibility." src="assets/images/image_23.jpg"/>
+</div>
+<div class="relative z-10 max-w-3xl mx-auto text-center px-margin-mobile">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-primary mb-6">Join the Movement</h2>
+<p class="font-body-md text-body-md text-on-primary/80 mb-10 text-lg">Your small action today ensures a sustainable tomorrow for Bangladesh.</p>
+<button class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-full font-label-caps text-label-caps hover:bg-white hover:text-primary transition-colors shadow-lg transition-all duration-300 hover:shadow-lg active:scale-95">
+                    BECOME A PARTNER
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-[#0F3D1A] text-white py-12 md:py-20 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1">
+<a href="index.html" class="font-headline-lg text-headline-lg font-bold text-primary-fixed mb-4">Punosristi</a>
+<p class="text-white/60 mb-6">Smart recycling for a cleaner Bangladesh. Re-creating our future, one bottle at a time.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="facebook">social_leaderboard</span></a>
+<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Quick Links</h4>
+<ul class="space-y-4 text-white/60">
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Recycle</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Reward</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Rebuild</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Impact Reports</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Contact Us</h4>
+<ul class="space-y-4 text-white/60">
+<li class="flex gap-2"><span class="material-symbols-outlined text-sm" data-icon="mail">mail</span> info@punosristi.com</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-sm" data-icon="phone">phone</span> +880 1234 567890</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span> Banani, Dhaka, Bangladesh</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">IUB Pilot Site</h4>
+<p class="text-white/60 mb-4">Our first operational reverse vending machines will be live at:</p>
+<p class="font-bold text-primary-fixed">Independent University Bangladesh (IUB)</p>
+<p class="text-sm text-white/40">Bashundhara R/A, Dhaka 1229</p>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-white/40 text-sm">
+<p>© 2024 Punosristi. All rights reserved. Dhaka, Bangladesh.</p>
+<p class="mt-4 md:mt-0">Designed for a Greener Tomorrow</p>
+</div>
+</footer>
+<script src="assets/js/mobile-menu.js"></script>
+</body></html>
+
+
+
+
+
+
+
+
+

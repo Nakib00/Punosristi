@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - Punosristi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#dcbe95",
+                        "error-container": "#ffdad6",
+                        "outline": "#717a6f",
+                        "secondary": "#006e1c",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e1e3e1",
+                        "secondary-fixed": "#94f990",
+                        "primary": "#004317",
+                        "surface-tint": "#2a6b37",
+                        "on-tertiary-fixed": "#281801",
+                        "surface": "#f8faf8",
+                        "background": "#f8faf8",
+                        "on-tertiary-fixed-variant": "#584324",
+                        "secondary-container": "#91f78e",
+                        "inverse-on-surface": "#eff1ef",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#1a5c2a",
+                        "on-background": "#191c1b",
+                        "primary-fixed": "#aef3b1",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#8fd394",
+                        "surface-variant": "#e1e3e1",
+                        "surface-container-low": "#f2f4f2",
+                        "on-secondary-fixed": "#002204",
+                        "secondary-fixed-dim": "#78dc77",
+                        "on-secondary-container": "#00731e",
+                        "on-surface": "#191c1b",
+                        "tertiary-container": "#624c2c",
+                        "surface-bright": "#f8faf8",
+                        "inverse-primary": "#93d697",
+                        "inverse-surface": "#2e3130",
+                        "tertiary-fixed-dim": "#e1c299",
+                        "primary-fixed-dim": "#93d697",
+                        "outline-variant": "#c0c9bc",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#feddb3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#eceeec",
+                        "on-surface-variant": "#40493f",
+                        "on-primary-fixed-variant": "#0c5221",
+                        "surface-container-high": "#e6e9e7",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#005313",
+                        "tertiary": "#493617",
+                        "on-primary-fixed": "#002108",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#d8dad9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "container-max": "1280px",
+                        "unit": "8px",
+                        "margin-desktop": "80px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Poppins"],
+                        "headline-xl": ["Poppins"],
+                        "label-caps": ["Poppins"],
+                        "stat-display": ["Poppins"],
+                        "headline-lg-mobile": ["Poppins"],
+                        "body-md": ["Poppins"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "stat-display": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 30px rgba(0, 67, 23, 0.1);
+        }
+        .leaf-pattern {
+            background-image: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 0C4.5 0 0 4.5 0 10c0 5.5 4.5 10 10 10 5.5 0 10-4.5 10-10C20 4.5 15.5 0 10 0zm0 18c-4.4 0-8-3.6-8-8 0-4.4 3.6-8 8-8 4.4 0 8 3.6 8 8 0 4.4-3.6 8-8 8z" fill="%23004317" fill-opacity="0.05"/></svg>');
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="bg-surface/80 dark:bg-surface-container/80 backdrop-blur-lg sticky top-0 w-full z-50 border-b border-white/20 shadow-sm flex items-center justify-between px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary dark:text-inverse-primary tracking-tight">Punosristi</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-white/5 transition-all active:scale-95 duration-200 px-3 py-2 rounded-lg" href="#">About</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-white/5 transition-all active:scale-95 duration-200 px-3 py-2 rounded-lg" href="#">How It Works</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-white/5 transition-all active:scale-95 duration-200 px-3 py-2 rounded-lg" href="#">Impact</a>
+<a class="text-primary dark:text-secondary-fixed font-bold border-b-2 border-primary font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-white/5 transition-all active:scale-95 duration-200 px-3 py-2 rounded-lg" href="#">Contact</a>
+</nav>
+<button class="hidden md:flex bg-primary text-on-primary px-6 py-3 rounded-full font-label-caps text-label-caps hover:bg-primary-container transition-colors active:scale-95 shadow-sm shadow-primary/10">Find A Machine</button>
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</header>
+<!-- HERO -->
+<section class="relative w-full min-h-[614px] flex items-center bg-surface-container-low">
+<div class="absolute inset-0 z-0">
+<img alt="Contact Hero" class="w-full h-full object-cover" data-alt="Two people engaged in a friendly, approachable conversation in a lush green park setting. The lighting is soft and natural, emphasizing a warm and inviting mood. The scene conveys a sense of connection and approachability, aligning with a professional eco-tech aesthetic. Colors are dominated by natural greens and warm sunlight tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe9F02YynnbvZQfH1UxXPkTsf_xLcmFxZMPhEGk0qpiRxVVIH5ljG9WljaCvnstTCA5pdKmHgsd-rEL5KMNcjSPzGaInkYz7IztHNj8Kt7nndKMhBWEjpJqgM6F-su_lZ5IyQ80w1jEXcPSEztVksVO8XNLTV9kuA_1C5FmY6rlC-EezqVK04B6ndTOO_0aIdykqnelDhsXRrKzx19w_6QZhz7uQTmrqQshwcfDmyEYtkVeReh_DxVTvitDeNvx_lipYypKy5r3stT"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-low/90 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20">
+<div class="max-w-2xl">
+<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary mb-6">We Would Love To Hear From You.</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 opacity-90">Whether you have a question, want to partner, or just want to say hello, our team is ready to connect.</p>
+<button class="bg-[#4CAF50] text-on-primary px-8 py-4 rounded-full font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-sm shadow-primary/10">Get In Touch</button>
+</div>
+</div>
+</section>
+<!-- MISSION BAND -->
+<section class="bg-primary text-on-primary py-12 px-margin-mobile md:px-margin-desktop leaf-pattern">
+<div class="max-w-container-max mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">"Every big movement starts with a single conversation."</h2>
+</div>
+</section>
+<!-- REASONS GRID -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-background">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">How Can We Help?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Card 1 -->
+<div class="glass-card p-8 rounded-xl hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 bg-primary-container/20 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="storefront">storefront</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-body-md font-bold text-primary mb-4">Host a Machine</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Bring green technology to your campus or business location. Let's discuss placement opportunities.</p>
+<a class="text-secondary font-label-caps text-label-caps hover:underline flex items-center" href="#">Learn More <span class="material-symbols-outlined ml-1 text-[16px]" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Card 2 -->
+<div class="glass-card p-8 rounded-xl hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 bg-primary-container/20 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="campaign">campaign</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-body-md font-bold text-primary mb-4">Advertise With Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Reach eco-conscious consumers directly through our interactive smart bins network.</p>
+<a class="text-secondary font-label-caps text-label-caps hover:underline flex items-center" href="#">Learn More <span class="material-symbols-outlined ml-1 text-[16px]" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Card 3 -->
+<div class="glass-card p-8 rounded-xl hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 bg-primary-container/20 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="handshake">handshake</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-body-md font-bold text-primary mb-4">Partner Shop</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Join our rewards network and attract sustainability-minded customers to your store.</p>
+<a class="text-secondary font-label-caps text-label-caps hover:underline flex items-center" href="#">Learn More <span class="material-symbols-outlined ml-1 text-[16px]" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Card 4 -->
+<div class="glass-card p-8 rounded-xl hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 bg-primary-container/20 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-body-md font-bold text-primary mb-4">General Inquiry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Have another question or just want to chat? We are here to listen and assist.</p>
+<a class="text-secondary font-label-caps text-label-caps hover:underline flex items-center" href="#contact-form">Contact Us <span class="material-symbols-outlined ml-1 text-[16px]" data-icon="arrow_downward">arrow_downward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- MAIN CONTACT SECTION -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface relative overflow-hidden" id="contact-form">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 rounded-l-full -mr-32"></div>
+<div class="max-w-container-max mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16">
+<!-- Left: Form -->
+<div class="glass-card p-10 rounded-2xl">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8">Send a Message</h3>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">First Name</label>
+<input class="w-full bg-background border border-outline-variant rounded-lg px-4 py-3 focus:border-[#4CAF50] focus:ring-1 focus:ring-[#4CAF50] outline-none transition-colors text-on-surface" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">Last Name</label>
+<input class="w-full bg-background border border-outline-variant rounded-lg px-4 py-3 focus:border-[#4CAF50] focus:ring-1 focus:ring-[#4CAF50] outline-none transition-colors text-on-surface" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">Email Address</label>
+<input class="w-full bg-background border border-outline-variant rounded-lg px-4 py-3 focus:border-[#4CAF50] focus:ring-1 focus:ring-[#4CAF50] outline-none transition-colors text-on-surface" type="email"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">Subject</label>
+<select class="w-full bg-background border border-outline-variant rounded-lg px-4 py-3 focus:border-[#4CAF50] focus:ring-1 focus:ring-[#4CAF50] outline-none transition-colors text-on-surface">
+<option>Host a Machine</option>
+<option>Advertise</option>
+<option>Partner Shop</option>
+<option>General Inquiry</option>
+</select>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">Message</label>
+<textarea class="w-full bg-background border border-outline-variant rounded-lg px-4 py-3 focus:border-[#4CAF50] focus:ring-1 focus:ring-[#4CAF50] outline-none transition-colors text-on-surface" rows="4"></textarea>
+</div>
+<button class="w-full bg-[#4CAF50] text-on-primary px-8 py-4 rounded-lg font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors" type="button">Send Message</button>
+</form>
+</div>
+<!-- Right: Info -->
+<div class="flex flex-col justify-center space-y-12">
+<div>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Contact Information</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Reach out directly through any of our channels. We aim to respond within 24 hours.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start space-x-4">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="email">email</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface-variant mb-1">Email</h4>
+<p class="font-body-md text-body-md text-primary font-medium">hello@punosristi.com</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="phone">phone</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface-variant mb-1">Phone</h4>
+<p class="font-body-md text-body-md text-primary font-medium">+880 1234 567890</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface-variant mb-1">HQ &amp; Pilot Location</h4>
+<p class="font-body-md text-body-md text-primary font-medium">Independent University, Bangladesh (IUB)<br/>Bashundhara R/A, Dhaka</p>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant">
+<h4 class="font-label-caps text-label-caps text-on-surface-variant mb-4">Follow Our Journey</h4>
+<div class="flex space-x-4">
+<a class="w-10 h-10 bg-surface-container rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+<!-- Add actual social icons if available, using placeholder for now -->
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MAP SECTION -->
+<section class="w-full h-[500px] relative bg-surface-dim">
+<img alt="Map Location" class="w-full h-full object-cover opacity-80 mix-blend-multiply" data-alt="A stylized, high-quality overhead map view showing an urban campus area. The visual style is minimal and modern, tinted with a cohesive deep forest green to match the brand's light-mode aesthetic. A distinct marker highlights a central hub, emphasizing connectivity and presence in Dhaka." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBatqaXTBbOogY475wXudxoJfES2pKUqguVwipKkFBdolrypIjXz85xlfLATLjlE5BiiWza1AaL4bhJEGt5h2Sw1jq_atsX1Auq6f4VyszNUfLLHoF7fX-NUcpmcHGDS1S-H0Rw2bZtpU-RYvs179FqmiXLZACeKq4lzQ3tRARCfCVcguiD8URSUDPnfyxKSGbp71fgORDjf7ixDxDlftj4ElVDQJTK01pEpRBuwCl7dAIoKtqSNAziQGo31gq_bK46dKOFvmj9szNk"/>
+<div class="absolute inset-0 bg-primary/10 backdrop-blur-[2px]"></div>
+<!-- Marker Overlay -->
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="glass-card px-6 py-3 rounded-full mb-4 shadow-lg">
+<p class="font-label-caps text-label-caps text-primary font-bold">IUB Pilot Hub</p>
+</div>
+<div class="w-6 h-6 bg-[#4CAF50] rounded-full border-4 border-white shadow-lg animate-pulse"></div>
+</div>
+</section>
+<!-- FAQ MINI -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-background">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-12 text-center">Quick Answers</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- FAQ 1 -->
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/50">
+<h4 class="font-label-caps text-label-caps text-primary mb-2">How do I report an issue with a machine?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Please use the form above and select 'General Inquiry', detailing the machine location.</p>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/50">
+<h4 class="font-label-caps text-label-caps text-primary mb-2">Are you expanding outside Dhaka?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">We are planning to open our Chittagong Hub soon. Stay tuned to our social channels!</p>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/50">
+<h4 class="font-label-caps text-label-caps text-primary mb-2">How do partner shops receive payments?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Our partner portal handles all automated settlements securely on a weekly basis.</p>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/50">
+<h4 class="font-label-caps text-label-caps text-primary mb-2">Can students volunteer?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Yes! We actively recruit campus ambassadors. Reach out to us via email.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CLOSING SECTION -->
+<section class="relative w-full py-32 flex items-center justify-center bg-primary">
+<div class="absolute inset-0 z-0">
+<img alt="Sunrise over Bangladesh" class="w-full h-full object-cover mix-blend-overlay opacity-40" data-alt="A beautiful, serene sunrise landscape over rural Bangladesh, featuring gentle mist and calm waters. The lighting is warm and hopeful, symbolizing a bright future. The image is styled with high contrast but softened by the deep forest green overlay, maintaining the brand's eco-conscious light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxdmmdc6QA_ar97O3AaDX3uA5Q1Uk6RQELujkYyTfPEjlDT7M7ELGU0kFsKbDDOc0ibBmk_TKXMUBn-53liPTijX2CVgYzsO5ah8EA866COO8bnbVGLWAOFaWFBY7V5rT867uu4u6x4URRHZ8vBvk0hceLoHPVxlPjeNekRgVZgGEhlRQes59JI6t_ZacyewbqhnBdkN-wrQRY5A9nbAWoIzhrgTDYaYmAqi0Kf34XQYUO1xcmk11GyLKmQUTsbXRiJBuJdKuyWLMO"/>
+</div>
+<div class="relative z-10 text-center px-margin-mobile">
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-primary max-w-3xl mx-auto">"Together, we can make Bangladesh cleaner."</h2>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-surface-container-lowest text-on-primary dark:text-on-surface font-body-md text-body-md w-full no-border flat no shadows transition-opacity duration-300">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-16 max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-primary mb-4">Punosristi</div>
+<p class="text-on-primary/80">© 2024 Punosristi Eco-Tech. Bangladesh's Leading Green Technology Partner.</p>
+</div>
+<div class="col-span-1"></div>
+<div class="col-span-1 md:col-span-2 flex flex-col md:flex-row gap-8 justify-end">
+<a class="text-on-primary/80 hover:text-on-primary hover:underline decoration-secondary-container underline-offset-4" href="#">Dhaka Pilot Station</a>
+<a class="text-on-primary/80 hover:text-on-primary hover:underline decoration-secondary-container underline-offset-4" href="#">Chittagong Hub</a>
+<a class="text-on-primary/80 hover:text-on-primary hover:underline decoration-secondary-container underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-on-primary/80 hover:text-on-primary hover:underline decoration-secondary-container underline-offset-4" href="#">Sustainability Report</a>
+</div>
+</div>
+</footer>
+</body></html>

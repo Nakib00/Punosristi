@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Punosristi | Re-Creating Bangladesh</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "secondary": "#006e1c",
+                        "on-secondary-fixed-variant": "#005313",
+                        "on-background": "#191c1b",
+                        "secondary-fixed-dim": "#78dc77",
+                        "inverse-surface": "#2e3130",
+                        "on-tertiary-fixed-variant": "#584324",
+                        "on-tertiary-container": "#dcbe95",
+                        "secondary-container": "#91f78e",
+                        "surface-container": "#eceeec",
+                        "background": "#f8faf8",
+                        "inverse-on-surface": "#eff1ef",
+                        "primary-fixed-dim": "#93d697",
+                        "surface-bright": "#f8faf8",
+                        "outline-variant": "#c0c9bc",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#281801",
+                        "error-container": "#ffdad6",
+                        "outline": "#717a6f",
+                        "tertiary-fixed": "#feddb3",
+                        "on-secondary-container": "#00731e",
+                        "surface-dim": "#d8dad9",
+                        "secondary-fixed": "#94f990",
+                        "on-surface": "#191c1b",
+                        "on-primary-fixed-variant": "#0c5221",
+                        "primary-container": "#1a5c2a",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#93d697",
+                        "surface-tint": "#2a6b37",
+                        "on-surface-variant": "#40493f",
+                        "surface-container-high": "#e6e9e7",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#e1c299",
+                        "surface-container-highest": "#e1e3e1",
+                        "on-primary-container": "#8fd394",
+                        "primary-fixed": "#aef3b1",
+                        "surface": "#f8faf8",
+                        "primary": "#004317",
+                        "tertiary": "#493617",
+                        "on-primary-fixed": "#002108",
+                        "surface-variant": "#e1e3e1",
+                        "tertiary-container": "#624c2c",
+                        "surface-container-low": "#f2f4f2",
+                        "on-secondary-fixed": "#002204",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "80px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Poppins"],
+                        "headline-lg": ["Poppins"],
+                        "body-md": ["Poppins"],
+                        "headline-xl": ["Poppins"],
+                        "headline-lg-mobile": ["Poppins"],
+                        "stat-display": ["Poppins"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "stat-display": ["40px", {"lineHeight": "48px", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto bg-surface/80 backdrop-blur-xl border-b border-white/20 shadow-sm">
+<div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary">Punosristi</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">How It Works</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Impact</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:opacity-90 active:scale-95 transition-all">Get Started</button>
+</nav>
+<!-- 1. FULL-SCREEN HERO -->
+<section class="min-h-screen flex flex-col md:flex-row relative">
+<!-- Left: Pollution -->
+<div class="w-full md:w-1/2 min-h-[50vh] md:min-h-screen relative flex items-center px-margin-mobile md:px-margin-desktop overflow-hidden">
+<img alt="Polluted water canal" class="absolute inset-0 w-full h-full object-cover brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4EYphoLSGF7PAik7vaoONlMxOddpgp0fAIRTB4ZmAZJEaHQyLvHLjti2jSJXUjwPQc71scnAI8d4GRivP73Ax4nvLeLAHbaRsXPov2_YB1hnzb9Pjq572i-GD04JDS89QBKwhKdxlDIcE9qRKHLePSh3-uxS74iusmmGRxm0YBc_WvZDDfa4j6dA_rd3VjgGkrEw6Mgck-W8LW7I-W2iAdAliMp4HUckJ1i6dohvtGS4_ImFunggPx0_yhjFK9cJerpsIFdT72RaC"/>
+<div class="relative z-10 text-white max-w-md">
+<p class="font-label-caps text-label-caps uppercase tracking-widest mb-4 opacity-80">The Current State</p>
+<h1 class="font-headline-xl text-headline-xl mb-6">This is Dhaka's reality.</h1>
+<p class="text-xl font-medium opacity-90">600+ tons of plastic waste generated every single day.</p>
+</div>
+</div>
+<!-- Right: Innovation -->
+<div class="w-full md:w-1/2 min-h-[50vh] md:min-h-screen bg-surface-container-low flex items-center px-margin-mobile md:px-margin-desktop relative">
+<div class="relative z-10 w-full">
+<div class="max-w-md">
+<p class="font-label-caps text-label-caps uppercase tracking-widest mb-4 text-primary opacity-80">Our Solution</p>
+<h1 class="font-headline-xl text-headline-xl mb-6 text-primary">This is our answer.</h1>
+<p class="text-xl font-medium text-on-surface-variant mb-8">Smart recycling. Instant rewards. Real change.</p>
+<img alt="Punosristi RVM machine" class="w-full max-w-xs mx-auto drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJPg9IFf-ey6jXPo_xb_nVnvNv22to8_L2uNMKaXGk_H3G0LC8NKKaguZINXaDgTbF1xaowtghhVTCO69iWBhW-63y1MpD61BrcicVBwjDfQpUbiZncMuNqwf3aVAztGZ_XEikMXtqhGgbYAAKTjD6lkDm8kjZktFl9VGiwKLfd6WLGSMfkifIqtvxWd_BRyGZA-EIVWJwWK0gkb75Mc1QF6QSCvMuwGtWJ0OFYSI8K5pC8F2EIJu391a-TDNZZyaw5u-iukvFTNgh"/>
+</div>
+</div>
+</div>
+<!-- Center Divider Icon -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-20 h-20 bg-primary text-on-primary rounded-full shadow-xl border-4 border-background">
+<span class="material-symbols-outlined text-4xl" data-icon="recycling">recycling</span>
+</div>
+<!-- Scroll Arrow -->
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-2 text-primary">
+<span class="text-sm font-bold uppercase tracking-widest">See How It Works</span>
+<span class="material-symbols-outlined animate-bounce">arrow_downward</span>
+</div>
+</section>
+<!-- 2. MISSION BAND -->
+<section class="bg-primary py-16 px-margin-mobile md:px-margin-desktop text-center">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-white mb-4">We turn Bangladesh's plastic problem into people's reward.</h2>
+<p class="text-secondary-fixed text-2xl font-semibold italic">Punosristi — পুনঃসৃষ্টি — means Re-Creation.</p>
+</div>
+</section>
+<!-- 3. PROBLEM SECTION -->
+<section class="relative py-24 px-margin-mobile md:px-margin-desktop bg-white">
+<div class="absolute inset-0 z-0">
+<img alt="Aerial view of landscape" class="w-full h-full object-cover opacity-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9Rl4reQ-WvZngc0FfE0lqG1l6O1ILgf4y6xunMs9YktAzTay6IhKacCiJ7uInY5uQVUYUTN4nrrCNplAPu80lZBsx7qsNn8EM6olYTrfYkXUS6GX37ZUMEwDYN8Kr71mHtJ-KDdO_OgAyjPk8mntxmOB1WNG1EM9XLGg8k8NW3qzu1txuf_jNYK5zKd9hah8CvSbC20YcKzdF1Bk2khG_uyYGxzXcS8W7dP2_172quPH0C3Ej67GMEhIbcdiEDVvhffmo8rDxTzek"/>
+<div class="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto text-center mb-16">
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface">Bangladesh is beautiful. Let's keep it that way.</h2>
+</div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max mx-auto">
+<div class="glass-card p-8 rounded-2xl text-center">
+<span class="text-primary font-stat-display text-stat-display block mb-2">600+</span>
+<p class="font-bold text-on-surface mb-4">Tons of Daily Waste</p>
+<p class="text-on-surface-variant">The massive scale of urban plastic pollution in Dhaka alone.</p>
+</div>
+<div class="glass-card p-8 rounded-2xl text-center">
+<span class="text-primary font-stat-display text-stat-display block mb-2">&lt; 20%</span>
+<p class="font-bold text-on-surface mb-4">Current Recycling Rate</p>
+<p class="text-on-surface-variant">Most plastic ends up in landfills or our beautiful waterways.</p>
+</div>
+<div class="glass-card p-8 rounded-2xl text-center">
+<span class="text-primary font-stat-display text-stat-display block mb-2">Zero</span>
+<p class="font-bold text-on-surface mb-4">Incentive to Sort</p>
+<p class="text-on-surface-variant">Until now, there was no direct reward for responsible disposal.</p>
+</div>
+</div>
+</section>
+<!-- 4. SOLUTION SECTION -->
+<section class="bg-secondary-container/20 py-24 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 relative group">
+<div class="absolute -inset-4 bg-primary/10 rounded-3xl blur-2xl group-hover:bg-primary/20 transition-all"></div>
+<img alt="Punosristi RVM machine detail" class="relative z-10 w-full max-w-sm mx-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJPg9IFf-ey6jXPo_xb_nVnvNv22to8_L2uNMKaXGk_H3G0LC8NKKaguZINXaDgTbF1xaowtghhVTCO69iWBhW-63y1MpD61BrcicVBwjDfQpUbiZncMuNqwf3aVAztGZ_XEikMXtqhGgbYAAKTjD6lkDm8kjZktFl9VGiwKLfd6WLGSMfkifIqtvxWd_BRyGZA-EIVWJwWK0gkb75Mc1QF6QSCvMuwGtWJ0OFYSI8K5pC8F2EIJu391a-TDNZZyaw5u-iukvFTNgh"/>
+<div class="absolute top-4 right-4 z-20 bg-primary text-white px-4 py-2 rounded-lg font-bold shadow-lg">Locally Assembled</div>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-8">One Machine. Infinite Impact.</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="visibility">visibility</span>
+<div>
+<p class="font-bold text-primary mb-1">AI Vision</p>
+<p class="text-sm text-on-surface-variant">Identifies brands and materials instantly.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="account_balance_wallet">account_balance_wallet</span>
+<div>
+<p class="font-bold text-primary mb-1">Instant Points</p>
+<p class="text-sm text-on-surface-variant">Earn rewards via mobile app or cash vouchers.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="ads_click">ads_click</span>
+<div>
+<p class="font-bold text-primary mb-1">Digital Ad</p>
+<p class="text-sm text-on-surface-variant">High-visibility screen for brand partners.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="cloud">cloud</span>
+<div>
+<p class="font-bold text-primary mb-1">IoT Monitoring</p>
+<p class="text-sm text-on-surface-variant">Real-time fill alerts and performance tracking.</p>
+</div>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold hover:opacity-90">See How It Works</button>
+<button class="border-2 border-primary text-primary px-8 py-4 rounded-full font-bold hover:bg-primary/5">View Full Specs</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. HOW IT WORKS -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-white">
+<div class="max-w-container-max mx-auto text-center mb-20">
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-4">As Simple As 1, 2, 3</h2>
+<p class="text-on-surface-variant">Recycling shouldn't be a chore. We made it a reward.</p>
+</div>
+<!-- Step Flow -->
+<div class="max-w-container-max mx-auto relative mb-32">
+<div class="hidden md:block absolute top-12 left-0 w-full h-1 border-t-2 border-dashed border-secondary-fixed-dim z-0"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter relative z-10">
+<div class="flex flex-col items-center text-center">
+<div class="w-24 h-24 bg-primary text-white rounded-full flex items-center justify-center mb-6 shadow-lg border-8 border-white">
+<span class="material-symbols-outlined text-4xl" data-icon="delete">delete</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">1. Drop Your Bottle</h3>
+<p class="text-on-surface-variant">Insert any clean PET plastic bottle into the RVM's intake slot.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-24 h-24 bg-primary text-white rounded-full flex items-center justify-center mb-6 shadow-lg border-8 border-white">
+<span class="material-symbols-outlined text-4xl" data-icon="qr_code_scanner">qr_code_scanner</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">2. Scan &amp; Earn</h3>
+<p class="text-on-surface-variant">Scan your unique QR code or enter your mobile number to get points.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-24 h-24 bg-primary text-white rounded-full flex items-center justify-center mb-6 shadow-lg border-8 border-white">
+<span class="material-symbols-outlined text-4xl" data-icon="redeem">redeem</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">3. Redeem Rewards</h3>
+<p class="text-on-surface-variant">Convert points into phone credit, partner vouchers, or cash.</p>
+</div>
+</div>
+</div>
+<!-- App Callout -->
+<div class="bg-primary rounded-3xl p-12 flex flex-col md:flex-row items-center justify-between max-w-container-max mx-auto overflow-hidden">
+<div class="text-white max-w-lg mb-8 md:mb-0">
+<h3 class="font-headline-lg text-headline-lg mb-4">Download the Punosristi App</h3>
+<p class="text-lg opacity-80 mb-6">Track your personal impact, find nearby machines, and manage your rewards wallet in real-time.</p>
+<div class="inline-block bg-white/10 px-6 py-2 rounded-full font-bold uppercase tracking-widest text-sm">Coming Soon — Q1 2026</div>
+</div>
+<div class="relative w-64 h-96 bg-black rounded-[3rem] border-[8px] border-surface-variant overflow-hidden shadow-2xl">
+<div class="absolute top-0 w-full h-6 bg-black flex justify-center pt-1"><div class="w-20 h-4 bg-zinc-900 rounded-full"></div></div>
+<div class="p-6 pt-12 text-white h-full flex flex-col">
+<div class="flex justify-between items-center mb-8">
+<div class="text-xs">Hello, Nakib</div>
+<div class="w-8 h-8 rounded-full bg-primary-fixed-dim"></div>
+</div>
+<div class="bg-white/10 rounded-xl p-4 mb-4">
+<div class="text-[10px] opacity-60">Total Points</div>
+<div class="text-2xl font-bold">4,250</div>
+</div>
+<div class="flex-grow flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-primary-fixed-dim" data-icon="eco">eco</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. NATURE IMPACT -->
+<section class="relative py-32 px-margin-mobile md:px-margin-desktop flex items-center min-h-[80vh]">
+<div class="absolute inset-0 z-0">
+<img alt="Beautiful Bangladeshi river landscape" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9Rl4reQ-WvZngc0FfE0lqG1l6O1ILgf4y6xunMs9YktAzTay6IhKacCiJ7uInY5uQVUYUTN4nrrCNplAPu80lZBsx7qsNn8EM6olYTrfYkXUS6GX37ZUMEwDYN8Kr71mHtJ-KDdO_OgAyjPk8mntxmOB1WNG1EM9XLGg8k8NW3qzu1txuf_jNYK5zKd9hah8CvSbC20YcKzdF1Bk2khG_uyYGxzXcS8W7dP2_172quPH0C3Ej67GMEhIbcdiEDVvhffmo8rDxTzek"/>
+<div class="absolute inset-0 bg-primary/40"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto">
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-white mb-12 max-w-2xl">Every bottle you recycle keeps this view alive.</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="glass-card p-8 rounded-2xl">
+<span class="material-symbols-outlined text-white text-4xl mb-4" data-icon="water">water</span>
+<h4 class="text-white font-bold text-xl mb-2">River Prevention</h4>
+<p class="text-white/80">Every RVM intercepts plastic before it reaches our rivers and the Bay of Bengal.</p>
+</div>
+<div class="glass-card p-8 rounded-2xl">
+<span class="material-symbols-outlined text-white text-4xl mb-4" data-icon="recycling">recycling</span>
+<h4 class="text-white font-bold text-xl mb-2">Plastic Reduction</h4>
+<p class="text-white/80">Closed-loop systems ensure high-quality material for circular manufacturing.</p>
+</div>
+<div class="glass-card p-8 rounded-2xl">
+<span class="material-symbols-outlined text-white text-4xl mb-4" data-icon="bolt">bolt</span>
+<h4 class="text-white font-bold text-xl mb-2">Energy Savings</h4>
+<p class="text-white/80">Recycled PET uses 75% less energy than virgin plastic production.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. WHO IS IT FOR -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto text-center mb-16">
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary">A Cleaner Future for Everyone</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max mx-auto">
+<div class="group relative rounded-3xl overflow-hidden h-[400px]">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A group of smiling Bangladeshi university students gathered outdoors on a modern campus courtyard during a bright morning. They are dressed in casual, modest attire, engaged in lively conversation, representing the vibrant youth and education focus of the brand. The lighting is warm and natural, creating a hopeful and energetic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDap1-889f9vl8sFeoU8tx5_Zeh637od40K8pKNpVOhJmtlHWAyiqeSZDZOrGfUoQ0BgK1Kil8biESbyEkqbIiEWHkUHZKF59K5eP1xc5U38EVQ866I92Phod260OgAwGbhndbxj20VNi8-KXwLuSDBzRS7A0aGEcQ5U3Rxb__kSRaxyceU4t26EBxhgF5w9mp7t_lejJOrRxeuKhFdNK5VjVSWu_KPKwkChBJWXTV8m9UvKl9cwv3UfLZIMq0sziWlTGXWFqMmwgQd"/>
+<div class="absolute inset-0 bg-primary/40 group-hover:bg-primary/60 transition-colors"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<h3 class="text-2xl font-bold mb-2">Students</h3>
+<p class="text-sm opacity-90">Fuel your study sessions with rewards while leading the campus eco-movement.</p>
+</div>
+</div>
+<div class="group relative rounded-3xl overflow-hidden h-[400px]">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A bustling Dhaka bus terminal with commuters in motion during the golden hour. The scene captures the organized chaos and movement of the city's heartbeat. Warm sunset light filters through the dust and activity, highlighting the daily journey of millions of people who are the primary users of the recycling solution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgI9vPn1wtwYp9LEHLXBxOJQ5s2jhUotoL2dOqF-bj0iQ4Fpx_iYwkt1_7vTjsdybMID5U2lP1DJ5DtS42ghO6tmBzCls_UkhliG6pZWVK2UWgL7RFZ_xqJag1I3uE1T_hpJxdcwD2vjNa-XQlqCS8sjmRMErHMW67srSUpiFj1OV1SDD6E3qViUREk3LXKKc58PVd-iNKFmeG5f_GDJxx3JVQtubP6bbpLQeXs8juVHPa0HxH_lpTxcvceVaPQZdekNa7lb-4JTe5"/>
+<div class="absolute inset-0 bg-primary/40 group-hover:bg-primary/60 transition-colors"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<h3 class="text-2xl font-bold mb-2">Commuters</h3>
+<p class="text-sm opacity-90">Recycle your on-the-go bottles at transport hubs and earn credit for your ride.</p>
+</div>
+</div>
+<div class="group relative rounded-3xl overflow-hidden h-[400px]">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A clean, modern corporate office interior in Dhaka with glass walls and minimalist green decor. Professional staff are seen in the background working in a bright, high-key lighting environment. This setting represents the corporate partnership aspect of the business model, emphasizing professional reliability and sustainability leadership." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr_wkxMoo4Q7xAwsJ3DK5lTSqRf06X-9GQR1ng1F2H1a6BP7fCh-JPWicZF0YsWvP6FrTkhz7u--AvijQa3ExEE5ILhL5qIhKy3kXMx9ELX-JWUvhYbkgHdAL7qTrpgXFqcsXRsaUe_jlpKL2I6zM-d7Tp4Jsr3ZgbDNSKVpcXQKJ2ScjKg9UO9gHQBY-PgiN0lvyAqMiEgVqwqPnzdKKS_IUZJA2dIvyayBLA5oJ-0JL0F5PyBOtAzyzwNSuRTMcBdWRWDZBLaTpA"/>
+<div class="absolute inset-0 bg-primary/40 group-hover:bg-primary/60 transition-colors"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<h3 class="text-2xl font-bold mb-2">Corporate Partners</h3>
+<p class="text-sm opacity-90">Achieve ESG goals and reach millions of conscious consumers through our network.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. LIVE NUMBERS -->
+<section class="bg-primary py-20 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+<div>
+<span class="block font-stat-display text-stat-display text-white">100+</span>
+<p class="text-primary-fixed-dim font-bold">Planned RVMs</p>
+</div>
+<div>
+<span class="block font-stat-display text-stat-display text-white">150k</span>
+<p class="text-primary-fixed-dim font-bold">KG Plastic/Year</p>
+</div>
+<div>
+<span class="block font-stat-display text-stat-display text-white">5k</span>
+<p class="text-primary-fixed-dim font-bold">Early Users</p>
+</div>
+<div>
+<span class="block font-stat-display text-stat-display text-white">3</span>
+<p class="text-primary-fixed-dim font-bold">Revenue Streams</p>
+</div>
+</div>
+<div class="mt-12 text-center text-white/60 italic font-medium">
+                Pilot Phase Launching at Independent University Bangladesh (IUB), Dhaka — 2026
+            </div>
+</div>
+</section>
+<!-- 9. BUSINESS MODEL -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-secondary-container/20">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-4">Sustainability That Pays For Itself</h2>
+<p class="text-on-surface-variant">Our diversified model ensures long-term viability and growth.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-white p-10 rounded-3xl shadow-sm border border-secondary-fixed-dim/30 hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-secondary-container rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="featured_video">featured_video</span>
+</div>
+<h4 class="text-2xl font-bold text-primary mb-2">60% Revenue</h4>
+<p class="font-bold text-on-surface mb-4">Ad Network</p>
+<p class="text-on-surface-variant">Digital screens on machines serve as premium outdoor advertising real estate for FMCG brands.</p>
+</div>
+<div class="bg-white p-10 rounded-3xl shadow-sm border border-secondary-fixed-dim/30 hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-secondary-container rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="conveyor_belt">conveyor_belt</span>
+</div>
+<h4 class="text-2xl font-bold text-primary mb-2">25% Revenue</h4>
+<p class="font-bold text-on-surface mb-4">Plastic Resale</p>
+<p class="text-on-surface-variant">We aggregate high-purity sorted PET and sell it directly to plastic recyclers and fiber manufacturers.</p>
+</div>
+<div class="bg-white p-10 rounded-3xl shadow-sm border border-secondary-fixed-dim/30 hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-secondary-container rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="handshake">handshake</span>
+</div>
+<h4 class="text-2xl font-bold text-primary mb-2">15% Revenue</h4>
+<p class="font-bold text-on-surface mb-4">Partner Fees</p>
+<p class="text-on-surface-variant">Location-based fees from malls, airports, and campuses seeking sustainable waste management solutions.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. TESTIMONIAL -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-white text-center">
+<div class="max-w-3xl mx-auto">
+<span class="material-symbols-outlined text-6xl text-primary/20 mb-8" data-icon="format_quote">format_quote</span>
+<p class="text-2xl md:text-3xl font-medium text-on-surface leading-relaxed mb-8">
+                "We aren't just building a machine; we are building a new culture of responsibility. Punosristi is the bridge between individual action and environmental restoration."
+            </p>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-surface-container mb-4 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a confident Bangladeshi entrepreneur in business casual attire. He is smiling warmly against a soft-focus office background, radiating leadership and vision. The lighting is professional and clean, capturing a sense of reliable and approachable authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDycBIE7r0yl16NXCLav_Pi-o3lNzpSm7ND8-kNaRJ-rkhoACYsXy3nrcQLtYMp-JNVXJZVinA0QxP8o_p5GedsNTAhXGp2AUaBd1YuMB_Eb2zL3xf7-fphzSiMj54l2OQydBPsYgW3qV2tk0kzpNASLW53DLnpB7xg7fu1YFjvaMRkSC9_2D7g_vrMvVRljrEWa7yTk64v2ncEst-0ZZihybzI-iKfDSysQjcUOIJ66hrBoKXLWXSH1C3XN2GzafH9QVOBDWVzIe3N"/>
+</div>
+<p class="font-bold text-primary">Md Nakibul Islam</p>
+<p class="text-on-surface-variant text-sm">Founder &amp; CEO, Punosristi</p>
+</div>
+</div>
+</section>
+<!-- 11. PARTNER WITH US -->
+<section class="flex flex-col md:flex-row min-h-[400px]">
+<div class="w-full md:w-1/2 bg-primary p-16 flex flex-col justify-center items-start text-white">
+<h3 class="font-headline-lg text-headline-lg mb-4">Own a location?</h3>
+<p class="text-lg opacity-80 mb-8">Install an RVM to reduce waste management costs and attract eco-conscious foot traffic.</p>
+<button class="bg-white text-primary px-8 py-3 rounded-full font-bold hover:bg-opacity-90">Inquire About Hosting</button>
+</div>
+<div class="w-full md:w-1/2 bg-secondary-fixed p-16 flex flex-col justify-center items-start text-primary">
+<h3 class="font-headline-lg text-headline-lg mb-4">Advertise with us?</h3>
+<p class="text-lg opacity-80 mb-8">Place your brand directly in front of engaged consumers at the moment of recycling.</p>
+<button class="bg-primary text-white px-8 py-3 rounded-full font-bold hover:bg-opacity-90">Download Media Kit</button>
+</div>
+</section>
+<!-- 12. FINAL CTA -->
+<section class="relative py-32 px-margin-mobile md:px-margin-desktop text-center">
+<div class="absolute inset-0 z-0">
+<img alt="Hand inserting bottle into machine" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATSBUCo2DncdPY-XTJy6AD_dLZxGzYES7d_HVw78hP-FDkvoa27qU_7dkqxohIJE9vmYZsl1gSG2J82xQgGUYfSSeubA02Xird3Yw7JfXhCspS3AOqOVjidY6p3LgBrDy1PKo8tV8mSUhwpduCCz7a1K4wyhPSABduas7Ie-3lwHQxeRnoF2Ka-vIJNP1Xov4W8T2ixX5HtL1wkTS-IUGOwmuGGHvHGdyByd17cL59E24ShkGDmMx7IP2pgFzzsJeTdNQk1Tct4LNZ"/>
+<div class="absolute inset-0 bg-primary/60"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto">
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-white mb-6">The change starts with one bottle.</h2>
+<p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto">Join the movement to clean Bangladesh and get rewarded for every single piece of plastic you recycle.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-secondary-fixed text-primary px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:scale-105 transition-transform">Find A Machine Near You</button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/30 px-10 py-5 rounded-full font-bold text-lg hover:bg-white/20 transition-all">Download Our App</button>
+</div>
+</div>
+</section>
+<!-- 13. FOOTER -->
+<footer class="bg-[#0F3D1A] text-white py-20 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1">
+<div class="font-headline-lg text-headline-lg font-bold text-primary-fixed mb-4">Punosristi</div>
+<p class="text-white/60 mb-6">Smart recycling for a cleaner Bangladesh. Re-creating our future, one bottle at a time.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="facebook">social_leaderboard</span></a>
+<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Quick Links</h4>
+<ul class="space-y-4 text-white/60">
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Recycle</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Reward</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Rebuild</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Impact Reports</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Contact Us</h4>
+<ul class="space-y-4 text-white/60">
+<li class="flex gap-2"><span class="material-symbols-outlined text-sm" data-icon="mail">mail</span> info@punosristi.com</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-sm" data-icon="phone">phone</span> +880 1234 567890</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span> Banani, Dhaka, Bangladesh</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">IUB Pilot Site</h4>
+<p class="text-white/60 mb-4">Our first operational reverse vending machines will be live at:</p>
+<p class="font-bold text-primary-fixed">Independent University Bangladesh (IUB)</p>
+<p class="text-sm text-white/40">Bashundhara R/A, Dhaka 1229</p>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-white/40 text-sm">
+<p>© 2024 Punosristi. All rights reserved. Dhaka, Bangladesh.</p>
+<p class="mt-4 md:mt-0">Designed for a Greener Tomorrow</p>
+</div>
+</footer>
+</body></html>

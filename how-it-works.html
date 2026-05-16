@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>How It Works - Punosristi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="assets/js/tailwind-config.js"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- Top Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-white/20 shadow-sm">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto w-full">
+<a href="index.html" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary">Punosristi</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="about.html">About</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="how-it-works.html">How It Works</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="impact.html">Impact</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:opacity-90 transition-all duration-300 hover:shadow-lg active:scale-95">Get Started</button>
+<button id="mobile-menu-btn" class="md:hidden text-primary p-2 flex items-center justify-center rounded-full hover:bg-primary/10 transition-all duration-300 hover:shadow-lg active:scale-95">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu Dropdown -->
+<div id="mobile-menu" class="hidden md:hidden bg-surface/95 backdrop-blur-md border-t border-white/20 px-margin-mobile py-4 shadow-lg flex flex-col gap-2 max-h-[80vh] overflow-y-auto">
+<a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="about.html">About</a>
+<a class="text-primary font-bold block border-l-4 border-primary pl-3 py-2 bg-primary/5 font-body-md text-body-md rounded-r-lg" href="how-it-works.html">How It Works</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="impact.html">Impact</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="contact.html">Contact</a>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-bold hover:opacity-90 w-full mt-4 shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-lg active:scale-95">Get Started</button>
+</div>
+</nav>
+<!-- 1. HERO -->
+<section class="relative h-screen w-full flex items-center justify-center bg-black overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Close up of a person's hand inserting a clear plastic water bottle into the glowing green slot of a modern recycling vending machine. Soft, warm sunlight filters from the background, creating a hopeful, bright aesthetic. The machine is sleek metallic." class="w-full h-full object-cover opacity-60" data-alt="Close up of a person's hand inserting a clear plastic water bottle into the glowing green slot of a modern recycling vending machine. Soft, warm sunlight filters from the background, creating a hopeful, bright aesthetic. The machine is sleek metallic. The overall mood is positive and environmentally conscious, emphasizing the ease of green technology." src="assets/images/image_17.jpg"/>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-container-max w-full">
+<h1 class="font-headline-xl text-headline-xl text-white text-shadow mb-6">
+                Recycling Has Never Been This Simple.
+            </h1>
+<p class="font-body-md text-body-md text-white/90 max-w-2xl mx-auto mb-8 text-shadow text-lg">
+                Turn your empty bottles into rewards instantly with our AI-powered Reverse Vending Machines.
+            </p>
+<button class="bg-[#4CAF50] text-white font-body-md text-body-md px-8 py-4 rounded-full hover:bg-[#45a049] transition-all shadow-lg shadow-[#4CAF50]/20 flex items-center gap-2 mx-auto">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+                Find Nearest Machine
+            </button>
+</div>
+</section>
+<!-- 2. MISSION BAND -->
+<section class="bg-primary text-on-primary py-12 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto text-center">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg">
+                Three steps for you. A lifetime of impact for Bangladesh.
+            </h2>
+</div>
+</section>
+<!-- 3. USER JOURNEY -->
+<section class="py-16 md:py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto space-y-32">
+<!-- Step 1 -->
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2 order-2 md:order-1">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-stat-display text-stat-display mb-6">1</div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Find Machine &amp; App</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                    Locate the nearest Punosristi Smart RVM using our mobile app. Whether you're on a university campus, a busy shopping mall, or a transit hub, an eco-friendly drop-off point is just around the corner.
+                </p>
+<button class="border border-primary text-primary font-body-md text-body-md px-6 py-2 rounded-full hover:bg-primary/5 transition-all duration-300 hover:shadow-lg active:scale-95">Download App</button>
+</div>
+<div class="w-full md:w-1/2 order-1 md:order-2">
+<div class="relative rounded-xl overflow-hidden shadow-xl shadow-primary/5 aspect-square">
+<img loading="lazy" alt="A person holding a smartphone displaying a map application with green location pins. The screen shows the Punosristi app interface for finding recycling machines. Bright, natural lighting, outdoors, conveying modern green tech utility." class="w-full h-full object-cover" data-alt="A person holding a smartphone displaying a map application with green location pins. The screen shows the Punosristi app interface for finding recycling machines. Bright, natural lighting, outdoors, conveying modern green tech utility. The style is clean and minimal, fitting a modern app aesthetic." src="assets/images/image_18.jpg"/>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2">
+<div class="relative rounded-xl overflow-hidden shadow-xl shadow-primary/5 aspect-square">
+<img loading="lazy" alt="Close-up of a plastic bottle entering the circular opening of a clean, white reverse vending machine. Internal LED lights scan the bottle. The machine looks futuristic and hygienic. The background is slightly blurred." class="w-full h-full object-cover" data-alt="Close-up of a plastic bottle entering the circular opening of a clean, white reverse vending machine. Internal LED lights scan the bottle. The machine looks futuristic and hygienic. The background is slightly blurred. The focus is on the seamless interaction with green technology." src="assets/images/image_19.jpg"/>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-stat-display text-stat-display mb-6">2</div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Drop Bottle with AI</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                    Simply insert your empty PET bottles or aluminum cans. Our state-of-the-art AI sensors instantly identify the material, size, and brand to ensure proper sorting and calculate your exact reward value.
+                </p>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span> Instant Material Recognition</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span> Contamination Rejection</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span> Fast Processing Speed</li>
+</ul>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2 order-2 md:order-1">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-stat-display text-stat-display mb-6">3</div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Scan QR &amp; Earn</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                    Once finished, the machine displays a unique QR code. Scan it with the Punosristi app to instantly credit points to your digital wallet. Redeem these points for real-world value with our partners.
+                </p>
+</div>
+<div class="w-full md:w-1/2 order-1 md:order-2">
+<div class="relative rounded-xl overflow-hidden shadow-xl shadow-primary/5 aspect-square bg-surface-container-low flex items-center justify-center p-8">
+<!-- Bento Grid for Step 3 Visual -->
+<div class="grid grid-cols-2 gap-4 w-full h-full">
+<div class="bg-white rounded-lg shadow-sm p-4 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-2">qr_code_scanner</span>
+<span class="font-label-caps text-label-caps text-primary">Scan Code</span>
+</div>
+<div class="bg-secondary-container rounded-lg shadow-sm p-4 flex flex-col items-center justify-center text-center">
+<span class="font-stat-display text-stat-display text-on-secondary-container">+50</span>
+<span class="font-label-caps text-label-caps text-on-secondary-container">Points Added</span>
+</div>
+<div class="col-span-2 bg-primary rounded-lg shadow-sm p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-primary">wallet</span>
+<span class="font-body-md text-body-md text-on-primary">Total Balance</span>
+</div>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary-fixed">1,250</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. REWARDS -->
+<section class="bg-surface-container-low py-16 md:py-24 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-4">Turn Trash into Treasure</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Your eco-efforts deserve a reward. Redeem your Punosristi points across a wide network of partner brands in Bangladesh.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Reward Card 1 -->
+<div class="glass-panel p-6 rounded-xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-orange-600 text-3xl">restaurant</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Food &amp; Dining</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">Discounts at popular cafes and fast-food chains.</p>
+<span class="font-label-caps text-label-caps text-secondary bg-secondary/10 px-3 py-1 rounded-full">From 500 pts</span>
+</div>
+<!-- Reward Card 2 -->
+<div class="glass-panel p-6 rounded-xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-blue-600 text-3xl">shopping_cart</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Supershops</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">Vouchers for your daily groceries at major retail outlets.</p>
+<span class="font-label-caps text-label-caps text-secondary bg-secondary/10 px-3 py-1 rounded-full">From 1000 pts</span>
+</div>
+<!-- Reward Card 3 -->
+<div class="glass-panel p-6 rounded-xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-purple-600 text-3xl">checkroom</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Fashion &amp; Apparels</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">Exclusive offers on local and international clothing brands.</p>
+<span class="font-label-caps text-label-caps text-secondary bg-secondary/10 px-3 py-1 rounded-full">From 2000 pts</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. TECH SECTION (Horizontal Flow) -->
+<section class="py-16 md:py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg md:font-headline-lg text-headline-lg md:text-headline-lg text-primary mb-4">Inside the Machine</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">What happens after you drop the bottle?</p>
+</div>
+<div class="hidden md:flex items-center justify-between relative">
+<!-- Connecting Line -->
+<div class="absolute top-1/2 left-0 w-full h-[2px] bg-secondary-fixed-dim -z-10 border-t-2 border-dashed border-secondary-fixed"></div>
+<!-- Tech Step 1 -->
+<div class="flex flex-col items-center bg-surface p-4 rounded-xl">
+<div class="w-20 h-20 rounded-full bg-white border border-outline-variant shadow-sm flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">sensors</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary text-center">Insertion &amp;<br/>Sensing</span>
+</div>
+<!-- Tech Step 2 -->
+<div class="flex flex-col items-center bg-surface p-4 rounded-xl">
+<div class="w-20 h-20 rounded-full bg-white border border-outline-variant shadow-sm flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">memory</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary text-center">AI Material<br/>Classification</span>
+</div>
+<!-- Tech Step 3 -->
+<div class="flex flex-col items-center bg-surface p-4 rounded-xl">
+<div class="w-20 h-20 rounded-full bg-white border border-outline-variant shadow-sm flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">compress</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary text-center">Compaction &amp;<br/>Storage</span>
+</div>
+<!-- Tech Step 4 -->
+<div class="flex flex-col items-center bg-surface p-4 rounded-xl">
+<div class="w-20 h-20 rounded-full bg-white border border-outline-variant shadow-sm flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">cloud_sync</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary text-center">Logistics<br/>Alert</span>
+</div>
+</div>
+<!-- Mobile vertical list fallback -->
+<div class="md:hidden space-y-8">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-full bg-white border border-outline-variant shadow-sm flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-2xl">sensors</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary">Insertion &amp; Sensing</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-full bg-white border border-outline-variant shadow-sm flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-2xl">memory</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary">AI Material Classification</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-full bg-white border border-outline-variant shadow-sm flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-2xl">compress</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary">Compaction &amp; Storage</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-full bg-white border border-outline-variant shadow-sm flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-2xl">cloud_sync</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary">Logistics Alert</span>
+</div>
+</div>
+</section>
+<!-- 6. ADVERTISERS/PARTNERS -->
+<section class="bg-primary-container text-on-primary-container py-16 md:py-24 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+<div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-6 text-white">Digital Ad Funding</h3>
+<p class="font-body-md text-body-md text-white/80 mb-8">
+                    Our machines feature large, high-definition displays that serve dual purposes: guiding users and displaying dynamic advertisements. This innovative model helps subsidize the cost of recycling, making it accessible to more communities while providing brands with high-visibility, green-associated advertising space.
+                </p>
+<button class="border border-white text-white font-body-md text-body-md px-6 py-2 rounded-full hover:bg-white/10 transition-all duration-300 hover:shadow-lg active:scale-95">Advertise With Us</button>
+</div>
+<div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-6 text-white">Partner Shop Benefits</h3>
+<p class="font-body-md text-body-md text-white/80 mb-8">
+                    Hosting a Punosristi RVM drives eco-conscious foot traffic directly to your location. Retailers report increased sales as users redeem their recycling rewards in-store. It's a win for the environment, a win for the user, and a win for your business.
+                </p>
+<button class="border border-white text-white font-body-md text-body-md px-6 py-2 rounded-full hover:bg-white/10 transition-all duration-300 hover:shadow-lg active:scale-95">Host A Machine</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0F3D1A] text-white py-12 md:py-20 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1">
+<a href="index.html" class="font-headline-lg text-headline-lg font-bold text-primary-fixed mb-4">Punosristi</a>
+<p class="text-white/60 mb-6">Smart recycling for a cleaner Bangladesh. Re-creating our future, one bottle at a time.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="facebook">social_leaderboard</span></a>
+<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Quick Links</h4>
+<ul class="space-y-4 text-white/60">
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Recycle</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Reward</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Rebuild</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Impact Reports</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Contact Us</h4>
+<ul class="space-y-4 text-white/60">
+<li class="flex gap-2"><span class="material-symbols-outlined text-sm" data-icon="mail">mail</span> info@punosristi.com</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-sm" data-icon="phone">phone</span> +880 1234 567890</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span> Banani, Dhaka, Bangladesh</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">IUB Pilot Site</h4>
+<p class="text-white/60 mb-4">Our first operational reverse vending machines will be live at:</p>
+<p class="font-bold text-primary-fixed">Independent University Bangladesh (IUB)</p>
+<p class="text-sm text-white/40">Bashundhara R/A, Dhaka 1229</p>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-white/40 text-sm">
+<p>© 2024 Punosristi. All rights reserved. Dhaka, Bangladesh.</p>
+<p class="mt-4 md:mt-0">Designed for a Greener Tomorrow</p>
+</div>
+</footer>
+<script src="assets/js/mobile-menu.js"></script>
+</body></html>
+
+
+
+
+
+
+
+
+
