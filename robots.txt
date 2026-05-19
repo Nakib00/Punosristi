@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://punosristi.com/sitemap.xml
+Sitemap: https://punoshristi.com/sitemap.xml

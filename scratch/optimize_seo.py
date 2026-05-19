@@ -22,18 +22,18 @@ def process_file(filepath):
     h1_text = ""
     
     if filename == "index.html":
-        title = "Punosristi | Smart Plastic Recycling Rewards in Bangladesh"
-        description = "Punosristi offers IoT-enabled Smart Reverse Vending Machines for plastic bottle recycling in Dhaka, Bangladesh. Drop bottles, earn instant digital reward points."
-        h1_text = "Punosristi: Smart Plastic Recycling in Bangladesh."
+        title = "Punoshristi | Smart Plastic Recycling Rewards in Bangladesh"
+        description = "Punoshristi offers IoT-enabled Smart Reverse Vending Machines for plastic bottle recycling in Dhaka, Bangladesh. Drop bottles, earn instant digital reward points."
+        h1_text = "Punoshristi: Smart Plastic Recycling in Bangladesh."
         schema = """
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Punosristi",
+  "name": "Punoshristi",
   "alternateName": "পুনঃসৃষ্টি",
-  "url": "https://punosristi.com/",
-  "logo": "https://punosristi.com/assets/images/image_2.1.png",
+  "url": "https://punoshristi.com/",
+  "logo": "https://punoshristi.com/assets/images/image_2.1.png",
   "description": "IoT-enabled Smart Reverse Vending Machines for plastic bottle recycling in Dhaka, Bangladesh.",
   "contactPoint": {
     "@type": "ContactPoint",
@@ -48,34 +48,34 @@ def process_file(filepath):
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "Punosristi Smart Reverse Vending Machine",
+  "name": "Punoshristi Smart Reverse Vending Machine",
   "description": "Smart waste management RVM for plastic recycling in Bangladesh. Earn recycling reward points instantly.",
   "brand": {
     "@type": "Brand",
-    "name": "Punosristi"
+    "name": "Punoshristi"
   }
 }
 </script>"""
     elif filename == "about.html":
-        title = "About Punosristi | Green Tech Startup in Bangladesh"
-        description = "Learn about Punosristi's mission to solve the plastic recycling crisis in Dhaka, Bangladesh with smart technology, community action, and an eco-friendly vision."
-        h1_text = "Punosristi's Mission: Smart Plastic Recycling for a Greener Bangladesh"
+        title = "About Punoshristi | Green Tech Startup in Bangladesh"
+        description = "Learn about Punoshristi's mission to solve the plastic recycling crisis in Dhaka, Bangladesh with smart technology, community action, and an eco-friendly vision."
+        h1_text = "Punoshristi's Mission: Smart Plastic Recycling for a Greener Bangladesh"
     elif filename == "how-it-works.html":
-        title = "How Punosristi Works | Smart RVM Recycling Bangladesh"
-        description = "Discover how Punosristi's reverse vending machines work in Dhaka. Drop a plastic bottle, let AI sort it, scan your QR code, and earn instant rewards."
-        h1_text = "How Punosristi Works: Recycling Rewards in Bangladesh"
+        title = "How Punoshristi Works | Smart RVM Recycling Bangladesh"
+        description = "Discover how Punoshristi's reverse vending machines work in Dhaka. Drop a plastic bottle, let AI sort it, scan your QR code, and earn instant rewards."
+        h1_text = "How Punoshristi Works: Recycling Rewards in Bangladesh"
         schema = """
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "How to recycle a plastic bottle with Punosristi RVM",
-  "description": "Learn how to use Punosristi's smart Reverse Vending Machine to recycle plastic bottles and earn rewards in Dhaka, Bangladesh.",
+  "name": "How to recycle a plastic bottle with Punoshristi RVM",
+  "description": "Learn how to use Punoshristi's smart Reverse Vending Machine to recycle plastic bottles and earn rewards in Dhaka, Bangladesh.",
   "step": [
     {
       "@type": "HowToStep",
       "name": "Find Machine",
-      "text": "Locate the nearest Punosristi Smart RVM using our mobile app."
+      "text": "Locate the nearest Punoshristi Smart RVM using our mobile app."
     },
     {
       "@type": "HowToStep",
@@ -85,15 +85,15 @@ def process_file(filepath):
     {
       "@type": "HowToStep",
       "name": "Scan QR & Earn",
-      "text": "Scan the QR code displayed on the screen with the Punosristi app to instantly credit points to your digital wallet."
+      "text": "Scan the QR code displayed on the screen with the Punoshristi app to instantly credit points to your digital wallet."
     }
   ]
 }
 </script>"""
     elif filename == "impact.html":
         title = "Our Impact | Eco-Tech & Plastic Recycling in Bangladesh"
-        description = "See the real-time environmental impact of Punosristi's smart waste management network across Bangladesh. Tracking plastic recycled and CO2 emissions saved."
-        h1_text = "Punosristi's Impact: Reversing Plastic Pollution in Bangladesh"
+        description = "See the real-time environmental impact of Punoshristi's smart waste management network across Bangladesh. Tracking plastic recycled and CO2 emissions saved."
+        h1_text = "Punoshristi's Impact: Reversing Plastic Pollution in Bangladesh"
         schema = """
 <script type="application/ld+json">
 {
@@ -117,17 +117,17 @@ def process_file(filepath):
 }
 </script>"""
     elif filename == "contact.html":
-        title = "Contact Punosristi | Smart Waste Management Dhaka"
-        description = "Get in touch with Punosristi to host a smart reverse vending machine, partner with us, or learn more about plastic recycling initiatives in Bangladesh."
-        h1_text = "Contact Punosristi: Let's Re-Create Bangladesh Together"
+        title = "Contact Punoshristi | Smart Waste Management Dhaka"
+        description = "Get in touch with Punoshristi to host a smart reverse vending machine, partner with us, or learn more about plastic recycling initiatives in Bangladesh."
+        h1_text = "Contact Punoshristi: Let's Re-Create Bangladesh Together"
         schema = """
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Punosristi",
-  "image": "https://punosristi.com/assets/images/image_2.1.png",
-  "url": "https://punosristi.com/",
+  "name": "Punoshristi",
+  "image": "https://punoshristi.com/assets/images/image_2.1.png",
+  "url": "https://punoshristi.com/",
   "telephone": "+8801234567890",
   "address": {
     "@type": "PostalAddress",
@@ -151,8 +151,8 @@ def process_file(filepath):
 <title>{title}</title>
 <meta name="description" content="{description}"/>
 <meta name="robots" content="index, follow"/>
-<meta name="author" content="Punosristi"/>
-<meta name="keywords" content="Punosristi, পুনঃসৃষ্টি, plastic recycling Bangladesh, reverse vending machine Dhaka, RVM Bangladesh, eco tech Bangladesh, recycling reward app Dhaka, smart waste management Bangladesh, green technology Bangladesh"/>
+<meta name="author" content="Punoshristi"/>
+<meta name="keywords" content="Punoshristi, পুনঃসৃষ্টি, plastic recycling Bangladesh, reverse vending machine Dhaka, RVM Bangladesh, eco tech Bangladesh, recycling reward app Dhaka, smart waste management Bangladesh, green technology Bangladesh"/>
 <meta name="language" content="English"/>
 <meta name="geo.region" content="BD-13"/>
 <meta name="geo.placename" content="Dhaka"/>
@@ -160,22 +160,22 @@ def process_file(filepath):
 <meta name="theme-color" content="#1A5C2A"/>
 
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://punosristi.com/{filename if filename != 'index.html' else ''}"/>
+<meta property="og:url" content="https://punoshristi.com/{filename if filename != 'index.html' else ''}"/>
 <meta property="og:title" content="{title}"/>
 <meta property="og:description" content="{description}"/>
-<meta property="og:image" content="https://punosristi.com/assets/images/image_2.1.png"/>
-<meta property="og:site_name" content="Punosristi"/>
+<meta property="og:image" content="https://punoshristi.com/assets/images/image_2.1.png"/>
+<meta property="og:site_name" content="Punoshristi"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:locale:alternate" content="bn_BD"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="{title}"/>
 <meta name="twitter:description" content="{description}"/>
-<meta name="twitter:image" content="https://punosristi.com/assets/images/image_2.1.png"/>
+<meta name="twitter:image" content="https://punoshristi.com/assets/images/image_2.1.png"/>
 
-<link rel="canonical" href="https://punosristi.com/{filename if filename != 'index.html' else ''}"/>
-<link rel="alternate" hreflang="en-BD" href="https://punosristi.com/{filename if filename != 'index.html' else ''}"/>
-<link rel="alternate" hreflang="bn-BD" href="https://punosristi.com/bn/{filename if filename != 'index.html' else ''}"/>
+<link rel="canonical" href="https://punoshristi.com/{filename if filename != 'index.html' else ''}"/>
+<link rel="alternate" hreflang="en-BD" href="https://punoshristi.com/{filename if filename != 'index.html' else ''}"/>
+<link rel="alternate" hreflang="bn-BD" href="https://punoshristi.com/bn/{filename if filename != 'index.html' else ''}"/>
 
 <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"/>
 
@@ -248,7 +248,7 @@ def process_file(filepath):
             
         # Alt text
         old_alt = img.get('alt', img.get('data-alt', ''))
-        img['alt'] = f"{old_alt} - Punosristi Bangladesh Plastic Recycling" if old_alt else "Punosristi Bangladesh Plastic Recycling"
+        img['alt'] = f"{old_alt} - Punoshristi Bangladesh Plastic Recycling" if old_alt else "Punoshristi Bangladesh Plastic Recycling"
 
     # Write back
     with open(filepath, 'w', encoding='utf-8') as f:
@@ -258,7 +258,7 @@ def process_file(filepath):
 # Process all 5 files
 files = ["index.html", "about.html", "how-it-works.html", "impact.html", "contact.html"]
 for f in files:
-    full_path = os.path.join(r"d:\ZAN IT\ZAN Tech\Punosristi\stitch_punosristi_smart_recycling_rewards\stitch_punosristi_smart_recycling_rewards", f)
+    full_path = os.path.join(r"d:\ZAN IT\ZAN Tech\Punoshristi\stitch_punoshristi_smart_recycling_rewards\stitch_punoshristi_smart_recycling_rewards", f)
     process_file(full_path)
 
 print("SEO Optimization completed.")
