@@ -34,6 +34,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="assets/css/style.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://cdn.tailwindcss.com"/>
+<link rel="preload" as="image" href="assets/images/image_20.jpg" fetchpriority="high"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind-config.js"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -76,7 +80,7 @@
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="contact.html">Contact</a>
 </div>
 <div class="flex items-center gap-4">
-<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:opacity-90 transition-all duration-300 hover:shadow-lg active:scale-95">Get Started</button>
+<a class="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:opacity-90 transition-all duration-300 hover:shadow-lg active:scale-95" href="index.html#pitch-deck">Get Started</a>
 <button class="md:hidden text-primary p-2 flex items-center justify-center rounded-full hover:bg-primary/10 transition-all duration-300 hover:shadow-lg active:scale-95" id="mobile-menu-btn">
 <span class="material-symbols-outlined text-3xl">menu</span>
 </button>
@@ -89,14 +93,14 @@
 <a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="how-it-works.html">How It Works</a>
 <a class="text-primary font-bold block border-l-4 border-primary pl-3 py-2 bg-primary/5 font-body-md text-body-md rounded-r-lg" href="impact.html">Impact</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="contact.html">Contact</a>
-<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-bold hover:opacity-90 w-full mt-4 shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-lg active:scale-95">Get Started</button>
+<a class="block bg-primary text-on-primary px-6 py-3 rounded-full font-bold hover:opacity-90 w-full mt-4 shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-lg active:scale-95 text-center" href="index.html#pitch-deck">Get Started</a>
 </div>
 </nav>
 <main>
 <!-- 1. HERO SECTION -->
 <section class="relative w-full min-h-[819px] flex items-center pt-20 pb-32 overflow-hidden">
 <div class="absolute inset-0 z-0">
-<img alt="Vast aerial shot of clean Bangladesh river. - Punoshristi Bangladesh Plastic Recycling" class="w-full h-full object-cover" data-alt="A breathtaking, vast aerial drone shot of a pristine, wide river winding through lush green landscapes in rural Bangladesh during early morning golden hour. The water reflects the soft, bright light, contrasting beautifully with the deep emerald greens of the surrounding foliage. The image has a clean, premium, high-resolution aesthetic, evoking a profound sense of natural purity and environmental preservation." height="600" loading="eager" src="assets/images/image_20.jpg" width="800"/>
+<img alt="Vast aerial shot of clean Bangladesh river. - Punoshristi Bangladesh Plastic Recycling" class="w-full h-full object-cover" data-alt="A breathtaking, vast aerial drone shot of a pristine, wide river winding through lush green landscapes in rural Bangladesh during early morning golden hour. The water reflects the soft, bright light, contrasting beautifully with the deep emerald greens of the surrounding foliage. The image has a clean, premium, high-resolution aesthetic, evoking a profound sense of natural purity and environmental preservation." height="600" loading="eager" fetchpriority="high" decoding="sync" src="assets/images/image_20.jpg" width="800"/>
 <div class="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent"></div>
 </div>
 <div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
@@ -222,6 +226,7 @@
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Reward</a></li>
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Rebuild</a></li>
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Impact Reports</a></li>
+<li><a class="hover:text-primary-fixed transition-colors flex items-center gap-1" href="assets/Punoshristi-Pitch-Deck.pdf" rel="noopener" target="_blank"><span class="material-symbols-outlined text-sm">description</span>Investor Deck</a></li>
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a></li>
 </ul>
 </div>
@@ -246,4 +251,4 @@
 </div>
 </footer>
 <script defer="" src="assets/js/mobile-menu.js"></script>
-<script defer="" src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script defer="" src="assets/js/tailwind-config.js"></script></body></html>
+</body></html>

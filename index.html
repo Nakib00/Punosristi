@@ -34,6 +34,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="assets/css/style.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://cdn.tailwindcss.com"/>
+<link rel="preload" as="image" href="assets/images/image_1.jpg" fetchpriority="high"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind-config.js"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -85,7 +89,7 @@
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="contact.html">Contact</a>
 </div>
 <div class="flex items-center gap-4">
-<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:opacity-90 transition-all duration-300 hover:shadow-lg active:scale-95">Get Started</button>
+<a class="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:opacity-90 transition-all duration-300 hover:shadow-lg active:scale-95" href="#pitch-deck">Get Started</a>
 <button class="md:hidden text-primary p-2 flex items-center justify-center rounded-full hover:bg-primary/10 transition-all duration-300 hover:shadow-lg active:scale-95" id="mobile-menu-btn">
 <span class="material-symbols-outlined text-3xl">menu</span>
 </button>
@@ -98,14 +102,14 @@
 <a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="how-it-works.html">How It Works</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="impact.html">Impact</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="contact.html">Contact</a>
-<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-bold hover:opacity-90 w-full mt-4 shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-lg active:scale-95">Get Started</button>
+<a class="block bg-primary text-on-primary px-6 py-3 rounded-full font-bold hover:opacity-90 w-full mt-4 shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-lg active:scale-95 text-center" href="#pitch-deck">Get Started</a>
 </div>
 </nav>
 <!-- 1. FULL-SCREEN HERO -->
 <section class="min-h-screen flex flex-col md:flex-row relative">
 <!-- Left: Pollution -->
 <div class="w-full md:w-1/2 min-h-[50vh] md:min-h-screen relative flex items-center px-margin-mobile md:px-margin-desktop overflow-hidden">
-<img alt="Polluted water canal - Punoshristi Bangladesh Plastic Recycling" class="absolute inset-0 w-full h-full object-cover brightness-50" height="600" loading="eager" src="assets/images/image_1.jpg" width="800"/>
+<img alt="Polluted water canal - Punoshristi Bangladesh Plastic Recycling" class="absolute inset-0 w-full h-full object-cover brightness-50" height="600" loading="eager" fetchpriority="high" decoding="sync" src="assets/images/image_1.jpg" width="800"/>
 <div class="relative z-10 text-white max-w-md">
 <p class="font-label-caps text-label-caps uppercase tracking-widest mb-4 opacity-80">The Current State</p>
 <h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl mb-6">Punoshristi: Smart Plastic Recycling in Bangladesh.</h1>
@@ -118,7 +122,7 @@
 <p class="font-label-caps text-label-caps uppercase tracking-widest mb-4 text-primary opacity-80">Our Solution</p>
 <h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl mb-6 text-primary">This is our answer.</h2>
 <p class="text-xl font-medium text-on-surface-variant mb-12">Smart recycling. Instant rewards. Real change.</p>
-<img alt="Punoshristi RVM machine - Punoshristi Bangladesh Plastic Recycling" class="w-full max-w-sm md:max-w-md mx-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500" height="600" loading="lazy" src="assets/images/image_2.1.png" width="800"/>
+<img alt="Punoshristi RVM machine - Punoshristi Bangladesh Plastic Recycling" class="w-full max-w-sm md:max-w-md mx-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500" height="600" loading="lazy" decoding="async" src="assets/images/image_2.1.png" width="800"/>
 </div>
 </div>
 <!-- Center Divider Icon -->
@@ -250,9 +254,16 @@
 <div class="text-white max-w-lg mb-8 md:mb-0">
 <h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4">Download the Punoshristi App</h3>
 <p class="text-lg opacity-80 mb-6">Track your personal impact, find nearby machines, and manage your rewards wallet in real-time.</p>
-<div class="inline-block bg-white/10 px-6 py-2 rounded-full font-bold uppercase tracking-widest text-sm">Coming Soon — Q1 2026</div>
+<div class="inline-block bg-white/10 px-6 py-2 rounded-full font-bold uppercase tracking-widest text-sm mb-6">Coming Soon — Q1 2026</div>
+<div>
+<a class="inline-flex items-center gap-2 bg-secondary-fixed text-primary px-7 py-3 rounded-full font-bold hover:opacity-90 transition-all duration-300 hover:shadow-lg active:scale-95" href="https://stitch.withgoogle.com/preview/4553397571709577585?node-id=a0b072eaf2c2417fb3692549ce9c48eb" rel="noopener" target="_blank">
+<span class="material-symbols-outlined">smartphone</span>
+Preview App Design
+<span class="material-symbols-outlined text-base">open_in_new</span>
+</a>
 </div>
-<div class="relative w-64 h-96 bg-black rounded-[3rem] border-[8px] border-surface-variant overflow-hidden shadow-2xl">
+</div>
+<a class="group relative w-64 h-96 bg-black rounded-[3rem] border-[8px] border-surface-variant overflow-hidden shadow-2xl block shrink-0" href="https://stitch.withgoogle.com/preview/4553397571709577585?node-id=a0b072eaf2c2417fb3692549ce9c48eb" rel="noopener" target="_blank">
 <div class="absolute top-0 w-full h-6 bg-black flex justify-center pt-1"><div class="w-20 h-4 bg-zinc-900 rounded-full"></div></div>
 <div class="p-6 pt-12 text-white h-full flex flex-col">
 <div class="flex justify-between items-center mb-8">
@@ -267,7 +278,12 @@
 <span class="material-symbols-outlined text-6xl text-primary-fixed-dim" data-icon="eco">eco</span>
 </div>
 </div>
+<!-- Hover overlay -->
+<div class="absolute inset-0 bg-primary/85 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined text-white text-5xl mb-3">open_in_new</span>
+<p class="text-white font-bold text-sm uppercase tracking-widest">Preview App</p>
 </div>
+</a>
 </div>
 </section>
 <!-- 6. NATURE IMPACT -->
@@ -399,7 +415,7 @@
             </p>
 <div class="flex flex-col items-center">
 <div class="w-16 h-16 rounded-full bg-surface-container mb-4 overflow-hidden">
-<img alt="A professional headshot of a confident Bangladeshi entrepreneur in business casual attire. He is smiling warmly against a soft-focus office background, radiating leadership and vision. The lighting is professional and clean, capturing a sense of reliable and approachable authority. - Punoshristi Bangladesh Plastic Recycling" class="w-full h-full object-cover" data-alt="A professional headshot of a confident Bangladeshi entrepreneur in business casual attire. He is smiling warmly against a soft-focus office background, radiating leadership and vision. The lighting is professional and clean, capturing a sense of reliable and approachable authority." height="600" loading="lazy" src="assets/Co-Founder/nakib.jpg" width="800"/>
+<img alt="A professional headshot of a confident Bangladeshi entrepreneur in business casual attire. He is smiling warmly against a soft-focus office background, radiating leadership and vision. The lighting is professional and clean, capturing a sense of reliable and approachable authority. - Punoshristi Bangladesh Plastic Recycling" class="w-full h-full object-cover" data-alt="A professional headshot of a confident Bangladeshi entrepreneur in business casual attire. He is smiling warmly against a soft-focus office background, radiating leadership and vision. The lighting is professional and clean, capturing a sense of reliable and approachable authority." height="600" loading="lazy" decoding="async" src="assets/Co-Founder/nakib.jpg" width="800"/>
 </div>
 <p class="font-bold text-primary">Md Nakibul Islam</p>
 <p class="text-on-surface-variant text-sm">Founder &amp; CEO, Punoshristi</p>
@@ -419,7 +435,46 @@
 <button class="bg-primary text-white px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition-all duration-300 hover:shadow-lg active:scale-95">Download Media Kit</button>
 </div>
 </section>
-<!-- 12. FINAL CTA -->
+<!-- 12. INVESTOR SECTION -->
+<section class="py-16 md:py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="pitch-deck">
+<div class="max-w-container-max mx-auto">
+<div class="bg-white border border-secondary-fixed-dim/30 rounded-3xl p-8 md:p-14 flex flex-col lg:flex-row items-center gap-10 md:gap-16 shadow-sm">
+<!-- Left: Text -->
+<div class="flex-1 w-full">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-4 block">For Investors</span>
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary mb-4">Ready to Back the Change?</h2>
+<p class="text-on-surface-variant text-lg mb-8 leading-relaxed">Punoshristi is building Bangladesh's first large-scale smart plastic recycling network. Our full pitch deck covers the market opportunity, revenue model, traction, and team.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary px-8 py-4 rounded-full font-bold hover:opacity-90 transition-all duration-300 hover:shadow-lg active:scale-95" href="assets/Punoshristi-Pitch-Deck.pdf" rel="noopener" target="_blank">
+<span class="material-symbols-outlined">description</span>
+View Pitch Deck
+</a>
+<a class="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-8 py-4 rounded-full font-bold hover:bg-primary/5 transition-all duration-300 hover:shadow-lg active:scale-95" download="Punoshristi-Pitch-Deck.pdf" href="assets/Punoshristi-Pitch-Deck.pdf">
+<span class="material-symbols-outlined">download</span>
+Download PDF
+</a>
+</div>
+</div>
+<!-- Right: PDF Card -->
+<div class="shrink-0 w-full max-w-xs lg:w-56 bg-surface-container rounded-2xl p-8 flex flex-col items-center gap-4 border border-outline-variant/40 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">picture_as_pdf</span>
+</div>
+<div class="text-center">
+<p class="font-bold text-on-surface text-sm">Punoshristi Pitch Deck</p>
+<p class="text-xs text-on-surface-variant mt-1">Investor Presentation · 2025</p>
+</div>
+<div class="w-full grid grid-cols-3 gap-1">
+<div class="h-1 bg-primary rounded-full"></div>
+<div class="h-1 bg-secondary-fixed-dim rounded-full"></div>
+<div class="h-1 bg-primary/30 rounded-full"></div>
+</div>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full font-label-caps text-label-caps text-xs">PDF · Full Deck</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 13. FINAL CTA -->
 <section class="relative py-20 md:py-32 px-margin-mobile md:px-margin-desktop text-center">
 <div class="absolute inset-0 z-0">
 <img alt="Hand inserting bottle into machine - Punoshristi Bangladesh Plastic Recycling" class="w-full h-full object-cover" height="600" loading="lazy" src="assets/images/image_8.jpg" width="800"/>
@@ -430,7 +485,10 @@
 <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto">Join the movement to clean Bangladesh and get rewarded for every single piece of plastic you recycle.</p>
 <div class="flex flex-col sm:flex-row justify-center gap-6">
 <button class="bg-secondary-fixed text-primary px-10 py-5 rounded-full font-bold text-lg shadow-xl transition-all duration-300 hover:shadow-lg active:scale-95">Find A Machine Near You</button>
-<button class="bg-white/10 backdrop-blur-md text-white border border-white/30 px-10 py-5 rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300 hover:shadow-lg active:scale-95">Download Our App</button>
+<a class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-white border border-white/30 px-10 py-5 rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300 hover:shadow-lg active:scale-95" href="https://stitch.withgoogle.com/preview/4553397571709577585?node-id=a0b072eaf2c2417fb3692549ce9c48eb" rel="noopener" target="_blank">
+<span class="material-symbols-outlined">smartphone</span>
+Preview Our App
+</a>
 </div>
 </div>
 </section>
@@ -452,6 +510,7 @@
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Reward</a></li>
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Rebuild</a></li>
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Impact Reports</a></li>
+<li><a class="hover:text-primary-fixed transition-colors flex items-center gap-1" href="assets/Punoshristi-Pitch-Deck.pdf" rel="noopener" target="_blank"><span class="material-symbols-outlined text-sm">description</span>Investor Deck</a></li>
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a></li>
 </ul>
 </div>
@@ -476,4 +535,4 @@
 </div>
 </footer>
 <script defer="" src="assets/js/mobile-menu.js"></script>
-<script defer="" src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script defer="" src="assets/js/tailwind-config.js"></script></body></html>
+</body></html>

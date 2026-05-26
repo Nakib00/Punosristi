@@ -34,6 +34,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="assets/css/style.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://cdn.tailwindcss.com"/>
+<link rel="preload" as="image" href="assets/images/image_17.jpg" fetchpriority="high"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind-config.js"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -80,7 +84,7 @@
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="contact.html">Contact</a>
 </div>
 <div class="flex items-center gap-4">
-<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:opacity-90 transition-all duration-300 hover:shadow-lg active:scale-95">Get Started</button>
+<a class="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:opacity-90 transition-all duration-300 hover:shadow-lg active:scale-95" href="index.html#pitch-deck">Get Started</a>
 <button class="md:hidden text-primary p-2 flex items-center justify-center rounded-full hover:bg-primary/10 transition-all duration-300 hover:shadow-lg active:scale-95" id="mobile-menu-btn">
 <span class="material-symbols-outlined text-3xl">menu</span>
 </button>
@@ -93,13 +97,13 @@
 <a class="text-primary font-bold block border-l-4 border-primary pl-3 py-2 bg-primary/5 font-body-md text-body-md rounded-r-lg" href="how-it-works.html">How It Works</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="impact.html">Impact</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="contact.html">Contact</a>
-<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-bold hover:opacity-90 w-full mt-4 shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-lg active:scale-95">Get Started</button>
+<a class="block bg-primary text-on-primary px-6 py-3 rounded-full font-bold hover:opacity-90 w-full mt-4 shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-lg active:scale-95 text-center" href="index.html#pitch-deck">Get Started</a>
 </div>
 </nav>
 <!-- 1. HERO -->
 <section class="relative h-screen w-full flex items-center justify-center bg-black overflow-hidden">
 <div class="absolute inset-0 z-0">
-<img alt="Close up of a person's hand inserting a clear plastic water bottle into the glowing green slot of a modern recycling vending machine. Soft, warm sunlight filters from the background, creating a hopeful, bright aesthetic. The machine is sleek metallic. - Punoshristi Bangladesh Plastic Recycling" class="w-full h-full object-cover opacity-60" data-alt="Close up of a person's hand inserting a clear plastic water bottle into the glowing green slot of a modern recycling vending machine. Soft, warm sunlight filters from the background, creating a hopeful, bright aesthetic. The machine is sleek metallic. The overall mood is positive and environmentally conscious, emphasizing the ease of green technology." height="600" loading="eager" src="assets/images/image_17.jpg" width="800"/>
+<img alt="Close up of a person's hand inserting a clear plastic water bottle into the glowing green slot of a modern recycling vending machine. Soft, warm sunlight filters from the background, creating a hopeful, bright aesthetic. The machine is sleek metallic. - Punoshristi Bangladesh Plastic Recycling" class="w-full h-full object-cover opacity-60" data-alt="Close up of a person's hand inserting a clear plastic water bottle into the glowing green slot of a modern recycling vending machine. Soft, warm sunlight filters from the background, creating a hopeful, bright aesthetic. The machine is sleek metallic. The overall mood is positive and environmentally conscious, emphasizing the ease of green technology." height="600" loading="eager" fetchpriority="high" decoding="sync" src="assets/images/image_17.jpg" width="800"/>
 </div>
 <div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-container-max w-full">
 <h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-white text-shadow mb-6">How Punoshristi Works: Recycling Rewards in Bangladesh</h1>
@@ -130,7 +134,11 @@
 <p class="font-body-md text-body-md text-on-surface-variant mb-6">
                     Locate the nearest Punoshristi Smart RVM using our mobile app. Whether you're on a university campus, a busy shopping mall, or a transit hub, an eco-friendly drop-off point is just around the corner.
                 </p>
-<button class="border border-primary text-primary font-body-md text-body-md px-6 py-2 rounded-full hover:bg-primary/5 transition-all duration-300 hover:shadow-lg active:scale-95">Download App</button>
+<a class="inline-flex items-center gap-2 border border-primary text-primary font-body-md text-body-md px-6 py-2 rounded-full hover:bg-primary/5 transition-all duration-300 hover:shadow-lg active:scale-95" href="https://stitch.withgoogle.com/preview/4553397571709577585?node-id=a0b072eaf2c2417fb3692549ce9c48eb" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-base">smartphone</span>
+Preview App Design
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
 </div>
 <div class="w-full md:w-1/2 order-1 md:order-2">
 <div class="relative rounded-xl overflow-hidden shadow-xl shadow-primary/5 aspect-square">
@@ -295,6 +303,78 @@
 </div>
 </div>
 </section>
+<!-- 5.5 APP PREVIEW -->
+<section class="py-16 md:py-24 px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto flex flex-col lg:flex-row items-center gap-12 md:gap-20">
+<!-- Left: Info -->
+<div class="flex-1 w-full">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-4 block">App Design Preview</span>
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary mb-6">See the Punoshristi App in Action</h2>
+<p class="text-on-surface-variant text-lg mb-8 leading-relaxed">Our reward wallet app lets you track impact, locate machines, and redeem points — all in one place. Explore the interactive design preview.</p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings:'FILL' 1">check_circle</span> Live points wallet & transaction history</li>
+<li class="flex items-center gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings:'FILL' 1">check_circle</span> Nearby machine finder with directions</li>
+<li class="flex items-center gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings:'FILL' 1">check_circle</span> One-tap QR scan to earn rewards</li>
+<li class="flex items-center gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings:'FILL' 1">check_circle</span> Partner vouchers & mobile top-up redemption</li>
+</ul>
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary px-8 py-4 rounded-full font-bold hover:opacity-90 transition-all duration-300 hover:shadow-lg active:scale-95" href="https://stitch.withgoogle.com/preview/4553397571709577585?node-id=a0b072eaf2c2417fb3692549ce9c48eb" rel="noopener" target="_blank">
+<span class="material-symbols-outlined">smartphone</span>
+Open Interactive Preview
+<span class="material-symbols-outlined text-base">open_in_new</span>
+</a>
+</div>
+<!-- Right: Phone mockup with preview link -->
+<div class="shrink-0 flex justify-center">
+<a class="group relative block" href="https://stitch.withgoogle.com/preview/4553397571709577585?node-id=a0b072eaf2c2417fb3692549ce9c48eb" rel="noopener" target="_blank" aria-label="Open Punoshristi app preview">
+<!-- Phone shell -->
+<div class="relative w-64 h-[520px] bg-[#0d1117] rounded-[3rem] border-[8px] border-[#1e2733] shadow-2xl shadow-primary/20 overflow-hidden">
+<!-- Notch -->
+<div class="absolute top-0 w-full h-7 bg-[#0d1117] flex justify-center pt-1 z-10"><div class="w-20 h-4 bg-[#1e2733] rounded-full"></div></div>
+<!-- Screen content simulation -->
+<div class="absolute inset-0 pt-7 bg-surface-container-low overflow-hidden">
+<div class="bg-primary px-5 pt-8 pb-6">
+<div class="flex justify-between items-center mb-6">
+<div>
+<p class="text-white/70 text-[10px]">Good morning,</p>
+<p class="text-white font-bold text-sm">Nakib 👋</p>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-primary text-base">person</span></div>
+</div>
+<div class="bg-white/15 rounded-2xl p-4">
+<p class="text-white/70 text-[10px] mb-1">Total Points</p>
+<p class="text-white font-bold text-2xl">4,250 pts</p>
+<p class="text-secondary-fixed text-[10px] mt-1">≈ ৳ 212.50 value</p>
+</div>
+</div>
+<div class="px-4 pt-4 space-y-3">
+<div class="flex gap-2">
+<div class="flex-1 bg-white rounded-xl p-3 text-center shadow-sm"><span class="material-symbols-outlined text-primary text-xl block mb-1">qr_code_scanner</span><p class="text-[10px] text-on-surface-variant font-bold">Scan</p></div>
+<div class="flex-1 bg-white rounded-xl p-3 text-center shadow-sm"><span class="material-symbols-outlined text-primary text-xl block mb-1">location_on</span><p class="text-[10px] text-on-surface-variant font-bold">Find</p></div>
+<div class="flex-1 bg-white rounded-xl p-3 text-center shadow-sm"><span class="material-symbols-outlined text-primary text-xl block mb-1">redeem</span><p class="text-[10px] text-on-surface-variant font-bold">Redeem</p></div>
+</div>
+<div class="bg-white rounded-xl p-3 shadow-sm flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-base">recycling</span></div>
+<div class="flex-1 min-w-0"><p class="text-[10px] font-bold text-on-surface truncate">Last Recycle · IUB Campus</p><p class="text-[9px] text-on-surface-variant">+25 pts · 2 bottles</p></div>
+</div>
+<div class="bg-white rounded-xl p-3 shadow-sm flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary text-base">star</span></div>
+<div class="flex-1 min-w-0"><p class="text-[10px] font-bold text-on-surface truncate">Reward Redeemed</p><p class="text-[9px] text-on-surface-variant">Grameenphone 30 min free</p></div>
+</div>
+</div>
+</div>
+<!-- Hover overlay -->
+<div class="absolute inset-0 bg-primary/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+<span class="material-symbols-outlined text-white text-5xl mb-3">open_in_new</span>
+<p class="text-white font-bold tracking-wide">Open Preview</p>
+<p class="text-white/70 text-xs mt-1">Interactive App Design</p>
+</div>
+</div>
+<!-- Glow -->
+<div class="absolute -inset-4 bg-primary/15 rounded-[4rem] blur-2xl -z-10 group-hover:bg-primary/25 transition-colors duration-300"></div>
+</a>
+</div>
+</div>
+</section>
 <!-- 6. ADVERTISERS/PARTNERS -->
 <section class="bg-primary-container text-on-primary-container py-16 md:py-24 px-margin-mobile md:px-margin-desktop">
 <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
@@ -332,6 +412,7 @@
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Reward</a></li>
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Rebuild</a></li>
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Impact Reports</a></li>
+<li><a class="hover:text-primary-fixed transition-colors flex items-center gap-1" href="assets/Punoshristi-Pitch-Deck.pdf" rel="noopener" target="_blank"><span class="material-symbols-outlined text-sm">description</span>Investor Deck</a></li>
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a></li>
 </ul>
 </div>
@@ -356,4 +437,4 @@
 </div>
 </footer>
 <script defer="" src="assets/js/mobile-menu.js"></script>
-<script defer="" src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script defer="" src="assets/js/tailwind-config.js"></script></body></html>
+</body></html>

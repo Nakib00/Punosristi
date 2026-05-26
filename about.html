@@ -34,6 +34,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="assets/css/style.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://cdn.tailwindcss.com"/>
+<link rel="preload" as="image" href="assets/images/image_9.jpg" fetchpriority="high"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind-config.js"></script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -55,7 +59,7 @@
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="contact.html">Contact</a>
 </div>
 <div class="flex items-center gap-4">
-<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:opacity-90 transition-all duration-300 hover:shadow-lg active:scale-95">Get Started</button>
+<a class="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:opacity-90 transition-all duration-300 hover:shadow-lg active:scale-95" href="index.html#pitch-deck">Get Started</a>
 <button class="md:hidden text-primary p-2 flex items-center justify-center rounded-full hover:bg-primary/10 transition-all duration-300 hover:shadow-lg active:scale-95" id="mobile-menu-btn">
 <span class="material-symbols-outlined text-3xl">menu</span>
 </button>
@@ -68,13 +72,13 @@
 <a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="how-it-works.html">How It Works</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="impact.html">Impact</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors block pl-4 py-2 font-body-md text-body-md" href="contact.html">Contact</a>
-<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-bold hover:opacity-90 w-full mt-4 shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-lg active:scale-95">Get Started</button>
+<a class="block bg-primary text-on-primary px-6 py-3 rounded-full font-bold hover:opacity-90 w-full mt-4 shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-lg active:scale-95 text-center" href="index.html#pitch-deck">Get Started</a>
 </div>
 </nav>
 <!-- 1. Hero -->
 <section class="relative min-h-[921px] flex items-center justify-center overflow-hidden">
 <div class="absolute inset-0 z-0">
-<img alt="A cinematic, wide-angle shot of young students looking thoughtfully over a heavily polluted river filled with plastic waste in a developing nation. The scene is shot during golden hour with a moody, introspective atmosphere. A dark, translucent forest-green overlay covers the image, creating a somber yet hopeful tone suitable for a modern eco-tech startup's background. - Punoshristi Bangladesh Plastic Recycling" class="w-full h-full object-cover object-center" data-alt="A cinematic, wide-angle shot of young students looking thoughtfully over a heavily polluted river filled with plastic waste in a developing nation. The scene is shot during golden hour with a moody, introspective atmosphere. A dark, translucent forest-green overlay covers the image, creating a somber yet hopeful tone suitable for a modern eco-tech startup's background." height="600" loading="eager" src="assets/images/image_9.jpg" width="800"/>
+<img alt="A cinematic, wide-angle shot of young students looking thoughtfully over a heavily polluted river filled with plastic waste in a developing nation. The scene is shot during golden hour with a moody, introspective atmosphere. A dark, translucent forest-green overlay covers the image, creating a somber yet hopeful tone suitable for a modern eco-tech startup's background. - Punoshristi Bangladesh Plastic Recycling" class="w-full h-full object-cover object-center" data-alt="A cinematic, wide-angle shot of young students looking thoughtfully over a heavily polluted river filled with plastic waste in a developing nation. The scene is shot during golden hour with a moody, introspective atmosphere. A dark, translucent forest-green overlay covers the image, creating a somber yet hopeful tone suitable for a modern eco-tech startup's background." height="600" loading="eager" fetchpriority="high" decoding="sync" src="assets/images/image_9.jpg" width="800"/>
 <div class="absolute inset-0 bg-primary/70 mix-blend-multiply"></div>
 <!-- Leaf Pattern Overlay -->
 <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
@@ -213,7 +217,7 @@
 <!-- Team Member 1 -->
 <div class="text-center group">
 <div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-6 border-4 border-surface-variant group-hover:border-primary transition-colors">
-<img alt="A professional headshot of a young South Asian man, Md Nakibul Islam, wearing smart casual attire. The background is a soft, out-of-focus modern office setting. The lighting is bright and even, casting a friendly and approachable mood consistent with a tech startup founder. - Punoshristi Bangladesh Plastic Recycling" class="w-full h-full object-cover" data-alt="A professional headshot of a young South Asian man, Md Nakibul Islam, wearing smart casual attire. The background is a soft, out-of-focus modern office setting. The lighting is bright and even, casting a friendly and approachable mood consistent with a tech startup founder." height="600" loading="lazy" src="assets/Co-Founder/nakib.jpg" width="800"/>
+<img alt="A professional headshot of a young South Asian man, Md Nakibul Islam, wearing smart casual attire. The background is a soft, out-of-focus modern office setting. The lighting is bright and even, casting a friendly and approachable mood consistent with a tech startup founder. - Punoshristi Bangladesh Plastic Recycling" class="w-full h-full object-cover" data-alt="A professional headshot of a young South Asian man, Md Nakibul Islam, wearing smart casual attire. The background is a soft, out-of-focus modern office setting. The lighting is bright and even, casting a friendly and approachable mood consistent with a tech startup founder." height="600" loading="lazy" decoding="async" src="assets/Co-Founder/nakib.jpg" width="800"/>
 </div>
 <h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-1" style="font-size: 20px;">Md Nakibul Islam</h3>
 <p class="font-body-md text-body-md text-secondary font-semibold mb-3">Co-Founder &amp; CEO</p>
@@ -393,6 +397,7 @@
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Reward</a></li>
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Rebuild</a></li>
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Impact Reports</a></li>
+<li><a class="hover:text-primary-fixed transition-colors flex items-center gap-1" href="assets/Punoshristi-Pitch-Deck.pdf" rel="noopener" target="_blank"><span class="material-symbols-outlined text-sm">description</span>Investor Deck</a></li>
 <li><a class="hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a></li>
 </ul>
 </div>
@@ -417,4 +422,4 @@
 </div>
 </footer>
 <script defer="" src="assets/js/mobile-menu.js"></script>
-<script defer="" src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script defer="" src="assets/js/tailwind-config.js"></script></body></html>
+</body></html>
